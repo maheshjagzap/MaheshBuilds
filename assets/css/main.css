@@ -1654,3 +1654,106 @@ h1,h2,h3,h4,h5,h6 {
 [data-theme="light"] .about-pillars .pillar-item { background: #f5f7fc; }
 [data-theme="light"] .contact-social-links .csl-link { background: #f5f7fc; }
 [data-theme="light"] .scroll-top { color: #fff; }
+
+/* ── 24. ABOUT STATS BLOCK (replaces photo) ─────────────────── */
+.about-stats-block {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  background: var(--surface);
+  border: 1px solid var(--border-2);
+  border-radius: var(--r-xl);
+  padding: 40px 36px;
+  box-shadow: var(--shadow-lg);
+  position: relative;
+  overflow: hidden;
+}
+.about-stats-block::before {
+  content: '';
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 4px;
+  background: var(--gradient);
+  border-radius: var(--r-xl) var(--r-xl) 0 0;
+}
+.about-stat-item {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid var(--border);
+}
+.about-stat-item:last-of-type { border-bottom: none; padding-bottom: 0; }
+.stat-num {
+  font-size: 2.8rem;
+  font-weight: 800;
+  line-height: 1;
+  letter-spacing: -1px;
+}
+.stat-lbl {
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: var(--text-muted);
+  letter-spacing: 0.5px;
+}
+.about-tech-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+  padding-top: 4px;
+}
+[data-theme="light"] .about-stats-block {
+  background: #ffffff;
+  border-color: rgba(74,111,168,0.15);
+}
+
+/* ── 25. ENHANCED BLUE BACKGROUND FEEL ──────────────────────── */
+/* Richer deep-blue dark background */
+:root {
+  --bg:         #060b14;
+  --bg-alt:     #0b1220;
+  --surface:    #0f1828;
+  --surface-2:  #162035;
+  --border:     rgba(79,142,247,0.12);
+  --border-2:   rgba(79,142,247,0.22);
+  --text:       #c4d0e8;
+  --text-muted: #5e78a6;
+  --heading:    #e4ecfa;
+  --accent:     #5b9cf6;
+  --accent-2:   #85beff;
+  --accent-glow:rgba(91,156,246,0.16);
+  --gradient:      linear-gradient(135deg, #5b9cf6 0%, #7c3aed 100%);
+  --gradient-text: linear-gradient(135deg, #5b9cf6 0%, #a78bfa 100%);
+  --gradient-hover:linear-gradient(135deg, #74adff 0%, #9050ff 100%);
+}
+
+/* Hero section — stronger blue glow blobs */
+.hero-blob-1 {
+  background: rgba(91,156,246,0.11);
+  width: 600px; height: 600px;
+}
+.hero-blob-2 {
+  background: rgba(124,58,237,0.09);
+  width: 440px; height: 440px;
+}
+
+/* Section alternating — slightly more blue-tinted */
+.alt-bg {
+  background: var(--bg-alt);
+  position: relative;
+}
+.alt-bg::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background: radial-gradient(ellipse 80% 50% at 50% 0%, rgba(91,156,246,0.04) 0%, transparent 70%);
+  pointer-events: none;
+}
+
+/* ci-value link style */
+.ci-value a {
+  color: var(--heading);
+  transition: color var(--transition);
+}
+.ci-value a:hover { color: var(--accent); }
+[data-theme="light"] .ci-value a { color: var(--heading); }
