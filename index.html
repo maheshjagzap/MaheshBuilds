@@ -4,63 +4,74 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Mahesh Jagzap | Custom Websites & Business Software | Maharashtra</title>
-  <meta name="description" content="I help hotels, restaurants, shops & businesses build custom websites, ecommerce platforms, dashboards and business software. Based in Maharashtra, India.">
-  <meta name="keywords" content="Custom Website Development, Business Website, Ecommerce Website, Hotel Website, Restaurant Website, Business Software, ASP.NET Developer, React Developer, Maharashtra India, Freelance Web Developer">
-  <meta name="author" content="Mahesh Jagzap">
-  <meta property="og:title" content="Mahesh Jagzap | Custom Websites & Business Software">
-  <meta property="og:description" content="Helping businesses go digital. Custom websites, ecommerce, dashboards & business software for hotels, restaurants, shops & startups.">
-  <meta property="og:type" content="website">
+  <title>MAHESH BUILDS  — Digital Experiences &amp; Web Development</title>
+  <meta name="description" content="MAHESH BUILDS creates modern websites, interfaces and digital experiences for businesses. Explore selected work, demos and digital builds.">
+  <meta name="keywords" content="web development, website design, business website, UI/UX design, landing pages, website redesign, digital presence, freelance web developer">
+  <meta name="author" content="MAHESH BUILDS">
 
+  <!-- Open Graph -->
+  <meta property="og:title" content="MAHESH BUILDS  — Digital Experiences &amp; Web Development">
+  <meta property="og:description" content="MAHESH BUILDS creates modern websites, interfaces and digital experiences for businesses. Explore selected work, demos and digital builds.">
+  <meta property="og:type" content="website">
+  <meta property="og:image" content="assets/img/profile/MaheshJagzapImg.jpg">
+
+  <!-- Twitter / X -->
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="MAHESH BUILDS  — Digital Experiences &amp; Web Development">
+  <meta name="twitter:description" content="Modern websites, interfaces and digital experiences for businesses.">
+
+  <!-- Favicon -->
   <link href="assets/img/favicon.png" rel="icon">
   <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+
+  <!-- Fonts: Plus Jakarta Sans -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Space+Grotesk:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800&display=swap" rel="stylesheet">
+
+  <!-- Bootstrap Icons -->
   <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <!-- AOS -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <!-- Main CSS -->
   <link href="assets/css/main.css" rel="stylesheet">
 </head>
 
 <body>
 
+  <!-- ═══════════════ PRELOADER ═══════════════ -->
   <div id="preloader">
-    <div class="preloader-inner">
-      <span class="preloader-dot"></span>
-      <span class="preloader-dot"></span>
-      <span class="preloader-dot"></span>
-    </div>
+    <div class="preloader-brand">MB<span class="preloader-dot-brand"> </span></div>
   </div>
 
-  <!-- ===== HEADER ===== -->
+  <!-- ═══════════════ HEADER ═══════════════ -->
   <header id="header">
     <div class="header-container">
-      <a href="#hero" class="logo">
-        <span class="logo-text">Mahesh Jagzap<span class="logo-dot">.</span></span>
+      <a href="#hero" class="logo" aria-label="MAHESH BUILDS Home">
+        <span class="logo-text">MAHESH BUILDS<span class="logo-apple"> </span></span>
       </a>
-      <nav id="navbar">
+
+      <nav id="navbar" role="navigation" aria-label="Main navigation">
         <ul>
-          <li><a href="#hero" class="nav-link active">Home</a></li>
+          <li><a href="#hero"     class="nav-link active">Home</a></li>
+          <li><a href="#work"     class="nav-link">Work</a></li>
           <li><a href="#services" class="nav-link">Services</a></li>
-          <li><a href="#industries" class="nav-link">Industries</a></li>
-          <li><a href="#projects" class="nav-link">Work</a></li>
-          <li><a href="#process" class="nav-link">Process</a></li>
-          <li><a href="#about" class="nav-link">About</a></li>
-          <li><a href="#contact" class="nav-link">Contact</a></li>
+          <li><a href="#process"  class="nav-link">Process</a></li>
+          <li><a href="#about"    class="nav-link">About</a></li>
+          <li><a href="#contact"  class="nav-link">Contact</a></li>
         </ul>
       </nav>
+
       <div class="header-actions">
-        <button class="theme-toggle" id="themeToggle" aria-label="Toggle theme">
+        <button class="theme-toggle" id="themeToggle" aria-label="Toggle light/dark theme">
           <span class="theme-toggle-track">
-            <i class="bi bi-sun-fill theme-icon-sun"></i>
-            <i class="bi bi-moon-fill theme-icon-moon"></i>
+            <i class="bi bi-sun-fill theme-icon-sun" aria-hidden="true"></i>
+            <i class="bi bi-moon-fill theme-icon-moon" aria-hidden="true"></i>
             <span class="theme-toggle-thumb"></span>
           </span>
         </button>
-        <a href="https://wa.me/917588174528?text=Hi%20Mahesh%2C%20I%20want%20to%20discuss%20a%20project" class="btn-whatsapp-header" target="_blank" rel="noopener">
-          <i class="bi bi-whatsapp"></i> WhatsApp
-        </a>
-        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Toggle menu">
+        <a href="#contact" class="btn-cta-header">Start a Project</a>
+        <button class="mobile-nav-toggle" id="mobileNavToggle" aria-label="Open menu" aria-expanded="false">
           <span></span><span></span><span></span>
         </button>
       </div>
@@ -69,1070 +80,1129 @@
 
   <main>
 
-    <!-- ===== HERO SECTION ===== -->
+    <!-- ═══════════════ HERO ═══════════════ -->
     <section id="hero" class="hero-section">
-      <div class="hero-bg-grid"></div>
-      <div class="hero-blob hero-blob-1"></div>
-      <div class="hero-blob hero-blob-2"></div>
+      <div class="hero-grid-bg" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-1" aria-hidden="true"></div>
+      <div class="hero-blob hero-blob-2" aria-hidden="true"></div>
 
       <div class="container">
-        <div class="hero-content">
+        <div class="hero-layout">
+
           <div class="hero-text" data-aos="fade-up">
-            <div class="hero-badge">
-              <span class="badge-dot"></span>
-              Available for New Projects
+            <div class="hero-eyebrow">
+              <span class="eyebrow-dot" aria-hidden="true"></span>
+              Available for new projects
             </div>
-            <h1 class="hero-title">
-              Helping Businesses<br>
-              <span class="gradient-text">Go Digital</span>
+
+            <h1 class="hero-headline">
+              I Build Websites That Make<br>
+              <span class="gradient-text">Businesses Look Better.</span>
             </h1>
-            <p class="hero-subtitle">
-              I build custom websites, ecommerce platforms, dashboards and business software that help hotels, restaurants, shops and startups grow their revenue and streamline operations.
+
+            <p class="hero-subtext">
+              Modern websites, digital experiences and business-focused interfaces built with attention to design, performance and usability.
             </p>
+
             <div class="hero-actions">
-              <a href="#contact" class="btn btn-primary">
-                <i class="bi bi-chat-dots"></i> Discuss Your Project
+              <a href="#work" class="btn btn-primary">
+                <i class="bi bi-grid-3x3-gap" aria-hidden="true"></i>
+                View My Work
               </a>
-              <a href="https://wa.me/917588174528?text=Hi%20Mahesh%2C%20I%20want%20to%20discuss%20a%20project" class="btn btn-whatsapp" target="_blank" rel="noopener">
-                <i class="bi bi-whatsapp"></i> WhatsApp Me
+              <a href="#contact" class="btn btn-ghost">
+                Let's Build Something
+                <i class="bi bi-arrow-right" aria-hidden="true"></i>
               </a>
             </div>
-            <div class="hero-trust-badges">
-              <span><i class="bi bi-check-circle-fill"></i> Responsive Design</span>
-              <span><i class="bi bi-check-circle-fill"></i> Custom Development</span>
-              <span><i class="bi bi-check-circle-fill"></i> Secure Applications</span>
-              <span><i class="bi bi-check-circle-fill"></i> Ongoing Support</span>
+
+            <div class="hero-trust">
+              <span><i class="bi bi-check2-circle" aria-hidden="true"></i> Responsive Design</span>
+              <span><i class="bi bi-check2-circle" aria-hidden="true"></i> Clean Code</span>
+              <span><i class="bi bi-check2-circle" aria-hidden="true"></i> Business-Focused</span>
             </div>
           </div>
 
-          <div class="hero-visual" data-aos="fade-left" data-aos-delay="200">
-            <div class="hero-services-visual">
-              <div class="hsv-center">
-                <i class="bi bi-code-slash"></i>
-                <span>Full Stack</span>
+          <!-- Browser Mockup Visual -->
+          <div class="hero-visual" data-aos="fade-left" data-aos-delay="150">
+            <div class="browser-mockup" aria-hidden="true">
+              <div class="browser-bar">
+                <span class="browser-dot dot-red"></span>
+                <span class="browser-dot dot-yellow"></span>
+                <span class="browser-dot dot-green"></span>
+                <span class="browser-address"><i class="bi bi-lock-fill"></i> maheshbuilds.com</span>
               </div>
-              <div class="hsv-orbit">
-                <div class="hsv-item" style="--i:0"><i class="bi bi-globe"></i><span>Websites</span></div>
-                <div class="hsv-item" style="--i:1"><i class="bi bi-cart4"></i><span>Ecommerce</span></div>
-                <div class="hsv-item" style="--i:2"><i class="bi bi-speedometer2"></i><span>Dashboards</span></div>
-                <div class="hsv-item" style="--i:3"><i class="bi bi-gear-wide-connected"></i><span>Software</span></div>
-                <div class="hsv-item" style="--i:4"><i class="bi bi-hdd-network"></i><span>APIs</span></div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="hero-stats" data-aos="fade-up" data-aos-delay="300">
-          <div class="stat-item">
-            <span class="stat-num">4+</span>
-            <span class="stat-label">Years Experience</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-num">10+</span>
-            <span class="stat-label">Projects Delivered</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-num">9+</span>
-            <span class="stat-label">Industries Served</span>
-          </div>
-          <div class="stat-divider"></div>
-          <div class="stat-item">
-            <span class="stat-num">100%</span>
-            <span class="stat-label">Custom Code</span>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== SERVICES SECTION ===== -->
-    <section id="services" class="section services-section alt-bg">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <div class="section-label">What I Build</div>
-          <h2 class="section-heading">What I Can Build <span class="gradient-text">For You</span></h2>
-          <p class="section-sub">End-to-end digital solutions tailored for your business — from simple websites to complex business software.</p>
-        </div>
-
-        <div class="services-grid">
-          <div class="service-card" data-aos="fade-up" data-aos-delay="0">
-            <div class="service-icon"><i class="bi bi-globe"></i></div>
-            <h3>Business Websites</h3>
-            <p>Professional, fast-loading websites that represent your brand and bring in customers 24/7.</p>
-            <ul class="service-features">
-              <li><i class="bi bi-check2"></i> Mobile Responsive</li>
-              <li><i class="bi bi-check2"></i> Modern Design</li>
-              <li><i class="bi bi-check2"></i> SEO Friendly</li>
-              <li><i class="bi bi-check2"></i> Contact Forms</li>
-              <li><i class="bi bi-check2"></i> WhatsApp Integration</li>
-            </ul>
-          </div>
-
-          <div class="service-card featured-service" data-aos="fade-up" data-aos-delay="80">
-            <div class="featured-badge">Most Popular</div>
-            <div class="service-icon"><i class="bi bi-building"></i></div>
-            <h3>Hotel &amp; Restaurant Websites</h3>
-            <p>Specialized websites for hospitality businesses with booking and inquiry management built-in.</p>
-            <ul class="service-features">
-              <li><i class="bi bi-check2"></i> Booking Forms</li>
-              <li><i class="bi bi-check2"></i> Menu Display</li>
-              <li><i class="bi bi-check2"></i> Photo Gallery</li>
-              <li><i class="bi bi-check2"></i> Inquiry Management</li>
-              <li><i class="bi bi-check2"></i> Location &amp; Map</li>
-            </ul>
-          </div>
-
-          <div class="service-card" data-aos="fade-up" data-aos-delay="160">
-            <div class="service-icon"><i class="bi bi-cart4"></i></div>
-            <h3>Ecommerce Websites</h3>
-            <p>Full-featured online stores with payment integration, order tracking and admin dashboard.</p>
-            <ul class="service-features">
-              <li><i class="bi bi-check2"></i> Product Catalog</li>
-              <li><i class="bi bi-check2"></i> Payment Integration</li>
-              <li><i class="bi bi-check2"></i> Order Management</li>
-              <li><i class="bi bi-check2"></i> Admin Dashboard</li>
-              <li><i class="bi bi-check2"></i> Inventory Tracking</li>
-            </ul>
-          </div>
-
-          <div class="service-card" data-aos="fade-up" data-aos-delay="240">
-            <div class="service-icon"><i class="bi bi-gear-wide-connected"></i></div>
-            <h3>Custom Business Software</h3>
-            <p>Automate your business operations with custom-built management systems tailored for you.</p>
-            <ul class="service-features">
-              <li><i class="bi bi-check2"></i> Inventory Management</li>
-              <li><i class="bi bi-check2"></i> Employee Management</li>
-              <li><i class="bi bi-check2"></i> CRM Systems</li>
-              <li><i class="bi bi-check2"></i> Billing Systems</li>
-              <li><i class="bi bi-check2"></i> Reporting Dashboards</li>
-            </ul>
-          </div>
-
-          <div class="service-card" data-aos="fade-up" data-aos-delay="320">
-            <div class="service-icon"><i class="bi bi-hdd-network"></i></div>
-            <h3>Web APIs &amp; Integrations</h3>
-            <p>Connect your systems with third-party services, payment gateways and mobile apps.</p>
-            <ul class="service-features">
-              <li><i class="bi bi-check2"></i> REST APIs</li>
-              <li><i class="bi bi-check2"></i> Third-Party Integrations</li>
-              <li><i class="bi bi-check2"></i> Payment Gateway Integration</li>
-              <li><i class="bi bi-check2"></i> Authentication Systems</li>
-              <li><i class="bi bi-check2"></i> Cloud Deployment</li>
-            </ul>
-          </div>
-
-          <div class="service-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="service-icon"><i class="bi bi-tools"></i></div>
-            <h3>Maintenance &amp; Support</h3>
-            <p>I stay with you after launch — fixing bugs, improving performance and adding new features.</p>
-            <ul class="service-features">
-              <li><i class="bi bi-check2"></i> Bug Fixes</li>
-              <li><i class="bi bi-check2"></i> Performance Optimization</li>
-              <li><i class="bi bi-check2"></i> Hosting Support</li>
-              <li><i class="bi bi-check2"></i> Security Updates</li>
-              <li><i class="bi bi-check2"></i> Feature Additions</li>
-            </ul>
-          </div>
-        </div>
-
-        <!-- Services CTA -->
-        <div class="inline-cta" data-aos="fade-up">
-          <p>Need a website or software for your business?</p>
-          <a href="#contact" class="btn btn-primary"><i class="bi bi-chat-dots"></i> Get Free Consultation</a>
-          <a href="https://wa.me/917588174528?text=Hi%20Mahesh%2C%20I%20need%20a%20website%20for%20my%20business" class="btn btn-whatsapp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp Me</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== INDUSTRIES SECTION ===== -->
-    <section id="industries" class="section industries-section">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <div class="section-label">Who I Work With</div>
-          <h2 class="section-heading">Industries <span class="gradient-text">I Serve</span></h2>
-          <p class="section-sub">I build digital solutions for businesses across multiple industries — from hospitality to manufacturing.</p>
-        </div>
-
-        <div class="industries-grid">
-          <div class="industry-card" data-aos="fade-up" data-aos-delay="0">
-            <div class="ind-icon"><i class="bi bi-building"></i></div>
-            <h4>Hotels &amp; Resorts</h4>
-            <p>Booking websites, room management, inquiry systems</p>
-          </div>
-          <div class="industry-card" data-aos="fade-up" data-aos-delay="60">
-            <div class="ind-icon"><i class="bi bi-cup-hot"></i></div>
-            <h4>Restaurants</h4>
-            <p>Menu websites, table booking, online ordering</p>
-          </div>
-          <div class="industry-card" data-aos="fade-up" data-aos-delay="120">
-            <div class="ind-icon"><i class="bi bi-shop"></i></div>
-            <h4>Retail Shops</h4>
-            <p>Online stores, product catalogs, payment integration</p>
-          </div>
-          <div class="industry-card" data-aos="fade-up" data-aos-delay="180">
-            <div class="ind-icon"><i class="bi bi-factory"></i></div>
-            <h4>Manufacturers</h4>
-            <p>Inventory systems, production tracking, B2B portals</p>
-          </div>
-          <div class="industry-card" data-aos="fade-up" data-aos-delay="240">
-            <div class="ind-icon"><i class="bi bi-cart4"></i></div>
-            <h4>Ecommerce Businesses</h4>
-            <p>Full-featured stores, marketplace platforms, catalogs</p>
-          </div>
-          <div class="industry-card" data-aos="fade-up" data-aos-delay="300">
-            <div class="ind-icon"><i class="bi bi-tree"></i></div>
-            <h4>Agriculture Businesses</h4>
-            <p>Farmer marketplaces, supply chain, buyer connections</p>
-          </div>
-          <div class="industry-card" data-aos="fade-up" data-aos-delay="360">
-            <div class="ind-icon"><i class="bi bi-rocket-takeoff"></i></div>
-            <h4>Startups</h4>
-            <p>MVPs, SaaS platforms, rapid development</p>
-          </div>
-          <div class="industry-card" data-aos="fade-up" data-aos-delay="420">
-            <div class="ind-icon"><i class="bi bi-mortarboard"></i></div>
-            <h4>Educational Institutes</h4>
-            <p>Student portals, admission systems, LMS platforms</p>
-          </div>
-          <div class="industry-card" data-aos="fade-up" data-aos-delay="480">
-            <div class="ind-icon"><i class="bi bi-briefcase"></i></div>
-            <h4>Service Providers</h4>
-            <p>Booking systems, CRM, client management portals</p>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== PROJECTS / CASE STUDIES SECTION ===== -->
-    <section id="projects" class="section projects-section alt-bg">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <div class="section-label">Our Work</div>
-          <h2 class="section-heading">Solutions &amp; <span class="gradient-text">Case Studies</span></h2>
-          <p class="section-sub">Real projects built to solve genuine business problems — with measurable results.</p>
-        </div>
-
-        <div class="proj-stats-bar" data-aos="fade-up" data-aos-delay="80">
-          <div class="psb-item">
-            <i class="bi bi-stack"></i>
-            <span class="psb-num">4+</span>
-            <span class="psb-label">Projects Completed</span>
-          </div>
-          <div class="psb-divider"></div>
-          <div class="psb-item">
-            <i class="bi bi-cloud-check"></i>
-            <span class="psb-num">Azure</span>
-            <span class="psb-label">Cloud Deployed</span>
-          </div>
-          <div class="psb-divider"></div>
-          <div class="psb-item">
-            <i class="bi bi-layers"></i>
-            <span class="psb-num">Full Stack</span>
-            <span class="psb-label">End-to-End Development</span>
-          </div>
-          <div class="psb-divider"></div>
-          <div class="psb-item">
-            <i class="bi bi-hdd-network"></i>
-            <span class="psb-num">REST API</span>
-            <span class="psb-label">Backend Architecture</span>
-          </div>
-        </div>
-
-        <div class="project-filters" data-aos="fade-up" data-aos-delay="120">
-          <button class="filter-btn active" data-filter="all">All Solutions</button>
-          <button class="filter-btn" data-filter="react">React.js</button>
-          <button class="filter-btn" data-filter="aspnet">ASP.NET</button>
-          <button class="filter-btn" data-filter="azure">Azure</button>
-          <button class="filter-btn" data-filter="sqlserver">SQL Server</button>
-        </div>
-
-        <!-- FEATURED PROJECT: Majhi Paithani -->
-        <div class="featured-project" id="featuredProject" data-tags="react aspnet azure sqlserver" data-aos="fade-up" data-aos-delay="140">
-          <div class="fp-top-bar">
-            <div class="fp-badges">
-              <span class="fp-badge-featured"><i class="bi bi-star-fill"></i> Featured Project</span>
-              <span class="fp-badge-platform"><i class="bi bi-cloud-check-fill"></i> Azure Deployed</span>
-            </div>
-            <div class="fp-domain">E-Commerce · Marketplace · Artisan Platform</div>
-          </div>
-
-          <div class="fp-grid">
-            <div class="fp-img-col">
-              <div class="fp-screen-frame">
-                <div class="fp-screen-dots"><span></span><span></span><span></span></div>
-                <div class="fp-screen-body">
-                  <img src="assets/img/portfolio/MajhiPaithani-1.JPG" alt="Majhi Paithani – Marketplace Platform for Paithani Artisans" class="fp-screen-img" id="fpMainImg">
-                </div>
-              </div>
-              <div class="fp-thumbnail-row">
-                <img src="assets/img/portfolio/MajhiPaithani-1.JPG" alt="Homepage" class="fp-thumb active" onclick="switchFpImg(this,'assets/img/portfolio/MajhiPaithani-1.JPG')">
-                <img src="assets/img/portfolio/MajhiPaithani-2.JPG" alt="Product Catalog" class="fp-thumb" onclick="switchFpImg(this,'assets/img/portfolio/MajhiPaithani-2.JPG')">
-                <img src="assets/img/portfolio/MajhiPaithani-3.JPG" alt="Seller Dashboard" class="fp-thumb" onclick="switchFpImg(this,'assets/img/portfolio/MajhiPaithani-3.JPG')">
-                <img src="assets/img/portfolio/MajhiPaithani-4.JPG" alt="Admin Panel" class="fp-thumb" onclick="switchFpImg(this,'assets/img/portfolio/MajhiPaithani-4.JPG')">
-              </div>
-            </div>
-
-            <div class="fp-content-col">
-              <div class="fp-stack-row">
-                <span class="fp-chip react">React.js</span>
-                <span class="fp-chip dotnet">ASP.NET Web API</span>
-                <span class="fp-chip csharp">C#</span>
-                <span class="fp-chip sql">SQL Server</span>
-                <span class="fp-chip azure">Azure</span>
-              </div>
-
-              <h3 class="fp-title">Majhi Paithani</h3>
-              <p class="fp-tagline">A Digital Marketplace Connecting Paithani Artisans Directly with Customers</p>
-
-              <div class="fp-problem-solution">
-                <div class="fps-block">
-                  <div class="fps-icon problem"><i class="bi bi-exclamation-diamond"></i></div>
-                  <div class="fps-text">
-                    <strong>Business Problem</strong>
-                    <p>Traditional Paithani artisans rely on WhatsApp &amp; social media for sales — no dedicated platform, no order system, no way to scale their business.</p>
+              <div class="browser-screen">
+                <div class="mock-hero-bar"></div>
+                <div class="mock-nav">
+                  <span class="mock-logo"></span>
+                  <div class="mock-nav-links">
+                    <span></span><span></span><span></span>
                   </div>
                 </div>
-                <div class="fps-block">
-                  <div class="fps-icon solution"><i class="bi bi-check-circle"></i></div>
-                  <div class="fps-text">
-                    <strong>Solution Delivered</strong>
+                <div class="mock-headline">
+                  <span class="mh-line mh-line-1"></span>
+                  <span class="mh-line mh-line-2"></span>
+                </div>
+                <div class="mock-cards-row">
+                  <div class="mock-card mc-1">
+                    <span class="mc-icon"><i class="bi bi-globe2"></i></span>
+                    <span class="mc-bar mc-b1"></span>
+                    <span class="mc-bar mc-b2"></span>
+                  </div>
+                  <div class="mock-card mc-2">
+                    <span class="mc-icon"><i class="bi bi-brush"></i></span>
+                    <span class="mc-bar mc-b1"></span>
+                    <span class="mc-bar mc-b2"></span>
+                  </div>
+                  <div class="mock-card mc-3">
+                    <span class="mc-icon"><i class="bi bi-lightning-charge"></i></span>
+                    <span class="mc-bar mc-b1"></span>
+                    <span class="mc-bar mc-b2"></span>
+                  </div>
+                </div>
+                <div class="mock-btn-row">
+                  <span class="mock-cta-btn"></span>
+                </div>
+              </div>
+            </div>
+
+            <!-- Floating UI Cards -->
+            <div class="float-card float-card-tl" aria-hidden="true">
+              <i class="bi bi-check2-all"></i>
+              <span>Design Complete</span>
+            </div>
+            <div class="float-card float-card-br" aria-hidden="true">
+              <i class="bi bi-lightning-charge-fill"></i>
+              <span>100 Performance</span>
+            </div>
+          </div>
+
+        </div><!-- /hero-layout -->
+      </div><!-- /container -->
+    </section>
+
+    <!-- ═══════════════ SELECTED WORK / PROJECTS ═══════════════ -->
+    <section id="work" class="section work-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-label">Selected Work</div>
+          <h2 class="section-heading">Builds &amp; <span class="gradient-text">Showcases</span></h2>
+          <p class="section-sub">A collection of digital builds — from full platforms to concept demos. Every project is presented as accurately as possible.</p>
+        </div>
+
+        <!-- Filter Tabs -->
+        <div class="work-filters" data-aos="fade-up" data-aos-delay="80" role="group" aria-label="Filter projects">
+          <button class="filter-btn active" data-filter="all">All</button>
+          <button class="filter-btn" data-filter="website">Website</button>
+          <button class="filter-btn" data-filter="platform">Platform</button>
+          <button class="filter-btn" data-filter="software">Software</button>
+          <button class="filter-btn" data-filter="demo">Demo</button>
+        </div>
+
+        <!-- Featured: Majhi Paithani -->
+        <article class="featured-work" id="featuredWork" data-tags="platform website" data-aos="fade-up" data-aos-delay="120">
+          <div class="fw-top-bar">
+            <div class="fw-badges">
+              <span class="fw-badge-star"><i class="bi bi-star-fill" aria-hidden="true"></i> Featured Build</span>
+              <span class="fw-badge-type">Platform</span>
+            </div>
+            <div class="fw-domain">E-Commerce · Marketplace · Artisan Platform</div>
+          </div>
+
+          <div class="fw-grid">
+            <div class="fw-img-col">
+              <div class="fw-screen-frame">
+                <div class="fw-screen-dots" aria-hidden="true"><span></span><span></span><span></span></div>
+                <div class="fw-screen-body">
+                  <img src="assets/img/portfolio/MajhiPaithani-1.JPG"
+                       alt="Majhi Paithani — Digital Marketplace for Paithani Artisans"
+                       class="fw-screen-img" id="fwMainImg" loading="eager">
+                </div>
+              </div>
+              <div class="fw-thumbs" role="list" aria-label="Project screenshots">
+                <img src="assets/img/portfolio/MajhiPaithani-1.JPG" alt="Homepage" class="fw-thumb active"
+                     onclick="switchFwImg(this,'assets/img/portfolio/MajhiPaithani-1.JPG')"
+                     role="listitem" tabindex="0">
+                <img src="assets/img/portfolio/MajhiPaithani-2.JPG" alt="Product Catalog" class="fw-thumb"
+                     onclick="switchFwImg(this,'assets/img/portfolio/MajhiPaithani-2.JPG')"
+                     role="listitem" tabindex="0">
+                <img src="assets/img/portfolio/MajhiPaithani-3.JPG" alt="Seller Dashboard" class="fw-thumb"
+                     onclick="switchFwImg(this,'assets/img/portfolio/MajhiPaithani-3.JPG')"
+                     role="listitem" tabindex="0">
+                <img src="assets/img/portfolio/MajhiPaithani-4.JPG" alt="Admin Panel" class="fw-thumb"
+                     onclick="switchFwImg(this,'assets/img/portfolio/MajhiPaithani-4.JPG')"
+                     role="listitem" tabindex="0">
+              </div>
+            </div>
+
+            <div class="fw-content-col">
+              <div class="fw-stack-row">
+                <span class="tech-chip react">React.js</span>
+                <span class="tech-chip dotnet">ASP.NET Web API</span>
+                <span class="tech-chip csharp">C#</span>
+                <span class="tech-chip sql">SQL Server</span>
+                <span class="tech-chip azure">Azure</span>
+              </div>
+
+              <h3 class="fw-title">Majhi Paithani</h3>
+              <p class="fw-tagline">A Digital Marketplace Connecting Paithani Artisans Directly with Customers</p>
+
+              <div class="fw-insight-blocks">
+                <div class="fw-insight problem-block">
+                  <div class="insight-icon problem-icon"><i class="bi bi-exclamation-diamond" aria-hidden="true"></i></div>
+                  <div class="insight-text">
+                    <strong>The Problem</strong>
+                    <p>Traditional Paithani artisans rely on WhatsApp and social media for sales — no dedicated platform, no order system, no way to scale.</p>
+                  </div>
+                </div>
+                <div class="fw-insight solution-block">
+                  <div class="insight-icon solution-icon"><i class="bi bi-check-circle" aria-hidden="true"></i></div>
+                  <div class="insight-text">
+                    <strong>What Was Built</strong>
                     <p>A dedicated marketplace where artisans register, manage products, receive orders and handle custom saree requests — all from one platform.</p>
                   </div>
                 </div>
               </div>
 
-              <p class="fp-features-label">Features Delivered</p>
-              <div class="fp-features-grid">
-                <div class="fp-feature"><i class="bi bi-person-badge"></i> Artisan Registration</div>
-                <div class="fp-feature"><i class="bi bi-grid"></i> Saree Catalog</div>
-                <div class="fp-feature"><i class="bi bi-bag-check"></i> Order Management</div>
-                <div class="fp-feature"><i class="bi bi-pencil-square"></i> Custom Saree Requests</div>
-                <div class="fp-feature"><i class="bi bi-speedometer2"></i> Seller Dashboard</div>
-                <div class="fp-feature"><i class="bi bi-shield-check"></i> Admin Panel</div>
-                <div class="fp-feature"><i class="bi bi-geo-alt"></i> Location Discovery</div>
-                <div class="fp-feature"><i class="bi bi-credit-card"></i> Multiple Payments</div>
-                <div class="fp-feature"><i class="bi bi-truck"></i> Delivery Tracking</div>
-                <div class="fp-feature"><i class="bi bi-chat-dots"></i> Customer Inquiries</div>
-                <div class="fp-feature"><i class="bi bi-people"></i> Customer Dashboard</div>
-                <div class="fp-feature"><i class="bi bi-graph-up"></i> Sales Analytics</div>
+              <p class="fw-features-label">What I Built Into It</p>
+              <div class="fw-features-grid">
+                <div class="fw-feature"><i class="bi bi-person-badge" aria-hidden="true"></i> Artisan Registration</div>
+                <div class="fw-feature"><i class="bi bi-grid" aria-hidden="true"></i> Saree Catalog</div>
+                <div class="fw-feature"><i class="bi bi-bag-check" aria-hidden="true"></i> Order Management</div>
+                <div class="fw-feature"><i class="bi bi-pencil-square" aria-hidden="true"></i> Custom Requests</div>
+                <div class="fw-feature"><i class="bi bi-speedometer2" aria-hidden="true"></i> Seller Dashboard</div>
+                <div class="fw-feature"><i class="bi bi-shield-check" aria-hidden="true"></i> Admin Panel</div>
+                <div class="fw-feature"><i class="bi bi-geo-alt" aria-hidden="true"></i> Location Discovery</div>
+                <div class="fw-feature"><i class="bi bi-credit-card" aria-hidden="true"></i> Multiple Payments</div>
+                <div class="fw-feature"><i class="bi bi-truck" aria-hidden="true"></i> Delivery Tracking</div>
+                <div class="fw-feature"><i class="bi bi-graph-up" aria-hidden="true"></i> Sales Analytics</div>
               </div>
 
-              <div class="fp-impact">
-                <i class="bi bi-graph-up-arrow"></i>
-                <span><strong>Business Impact:</strong> Artisans can now reach customers across India without depending on middlemen or social media.</span>
-              </div>
-
-              <div class="fp-actions">
+              <div class="fw-actions">
                 <a href="#contact" class="btn btn-primary btn-sm">
-                  <i class="bi bi-send"></i> Build Similar Platform
+                  <i class="bi bi-send" aria-hidden="true"></i> Discuss a Similar Build
                 </a>
-                <a href="https://github.com/maheshjagzap" class="btn btn-ghost btn-sm" target="_blank" rel="noopener">
-                  <i class="bi bi-github"></i> GitHub
-                </a>
-                <a href="https://wa.me/917588174528?text=Hi%20Mahesh%2C%20I%20want%20to%20discuss%20a%20similar%20project" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener">
-                  <i class="bi bi-whatsapp"></i> Discuss
+                <a href="https://github.com/maheshjagzap" class="btn btn-ghost btn-sm" target="_blank" rel="noopener noreferrer">
+                  <i class="bi bi-github" aria-hidden="true"></i> GitHub
                 </a>
               </div>
             </div>
           </div>
-        </div>
+        </article>
 
-        <!-- PROJECT CARDS GRID -->
+        <!-- Project Cards Grid -->
         <div class="projects-grid" id="projectsGrid">
 
-          <div class="project-card" data-tags="react aspnet sqlserver" data-aos="fade-up" data-aos-delay="0">
-            <div class="pc-img-wrapper">
-              <div class="pc-screen-frame">
-                <div class="pc-screen-dots"><span></span><span></span><span></span></div>
-                <img src="assets/img/portfolio/portfolio-7.webp" alt="Farmer Mitra - Agriculture Digital Platform" class="pc-img">
+          <!-- Farmer Mitra -->
+          <article class="project-card" data-tags="platform software" data-aos="fade-up" data-aos-delay="0">
+            <div class="pc-img-area">
+              <div class="pc-browser-chrome" aria-hidden="true">
+                <div class="pc-chrome-dots"><span></span><span></span><span></span></div>
               </div>
-              <div class="pc-overlay">
-                <div class="pc-overlay-content">
-                  <p class="pc-overlay-text">Bridging farmers with digital market opportunities</p>
-                  <div class="pc-actions">
-                    <a href="#contact" class="pc-btn"><i class="bi bi-eye"></i> Demo</a>
-                    <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener" class="pc-btn"><i class="bi bi-github"></i> Code</a>
+              <div class="pc-img-wrap">
+                <img src="assets/img/portfolio/portfolio-7.webp"
+                     alt="Farmer Mitra — Agriculture Digital Platform connecting farmers with buyers"
+                     class="pc-img" loading="lazy">
+                <div class="pc-overlay" aria-hidden="true">
+                  <div class="pc-overlay-inner">
+                    <p>Bridging farmers with digital market opportunities</p>
+                    <div class="pc-overlay-btns">
+                      <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener noreferrer" class="pc-btn">
+                        <i class="bi bi-github"></i> Code
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="pc-content">
-              <div class="pc-top-row">
-                <div class="pc-category"><i class="bi bi-tree"></i> Agriculture · Marketplace</div>
-                <div class="pc-deploy-badge"><i class="bi bi-hdd-network"></i> Web App</div>
+
+            <div class="pc-body">
+              <div class="pc-meta">
+                <span class="pc-tag"><i class="bi bi-tree" aria-hidden="true"></i> Platform</span>
+                <span class="pc-badge">Selected Work</span>
               </div>
               <h3 class="pc-title">Farmer Mitra</h3>
               <p class="pc-tagline">Connecting Farmers Directly with Buyers</p>
-              <div class="pc-problem">
-                <i class="bi bi-lightbulb"></i>
-                <span>Farmers struggle to reach buyers directly — this platform removes middlemen and increases farmer income.</span>
-              </div>
+              <p class="pc-desc">Removes middlemen from the agricultural supply chain — farmers list products, buyers connect directly, income increases.</p>
               <div class="pc-features">
-                <span><i class="bi bi-check2"></i> Farmer Registration</span>
-                <span><i class="bi bi-check2"></i> Product Listings</span>
-                <span><i class="bi bi-check2"></i> Market Connectivity</span>
-                <span><i class="bi bi-check2"></i> Profile Management</span>
+                <span>Farmer Registration</span>
+                <span>Product Listings</span>
+                <span>Market Connectivity</span>
+                <span>Profile Management</span>
               </div>
               <div class="pc-stack">
-                <span class="pcs react">React.js</span>
-                <span class="pcs dotnet">ASP.NET Web API</span>
-                <span class="pcs sql">SQL Server</span>
+                <span class="tech-chip react">React.js</span>
+                <span class="tech-chip dotnet">ASP.NET</span>
+                <span class="tech-chip sql">SQL Server</span>
               </div>
-              <div class="pc-footer-actions">
-                <a href="#contact" class="btn btn-primary btn-sm"><i class="bi bi-send"></i> Build Similar</a>
-                <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener" class="btn btn-ghost btn-sm"><i class="bi bi-github"></i> Code</a>
+              <div class="pc-footer">
+                <a href="#contact" class="btn btn-primary btn-sm"><i class="bi bi-send" aria-hidden="true"></i> Build Similar</a>
+                <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm"><i class="bi bi-github" aria-hidden="true"></i></a>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="project-card" data-tags="react aspnet sqlserver" data-aos="fade-up" data-aos-delay="100">
-            <div class="pc-img-wrapper">
-              <div class="pc-screen-frame">
-                <div class="pc-screen-dots"><span></span><span></span><span></span></div>
-                <img src="assets/img/portfolio/portfolio-8.webp" alt="Milk Management System - Dairy Platform" class="pc-img">
+          <!-- Milk Management System -->
+          <article class="project-card" data-tags="software platform" data-aos="fade-up" data-aos-delay="80">
+            <div class="pc-img-area">
+              <div class="pc-browser-chrome" aria-hidden="true">
+                <div class="pc-chrome-dots"><span></span><span></span><span></span></div>
               </div>
-              <div class="pc-overlay">
-                <div class="pc-overlay-content">
-                  <p class="pc-overlay-text">Dairy business management made simple</p>
-                  <div class="pc-actions">
-                    <a href="#contact" class="pc-btn"><i class="bi bi-eye"></i> Demo</a>
-                    <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener" class="pc-btn"><i class="bi bi-github"></i> Code</a>
+              <div class="pc-img-wrap">
+                <img src="assets/img/portfolio/portfolio-8.webp"
+                     alt="Milk Management System — Dairy Business Management Platform"
+                     class="pc-img" loading="lazy">
+                <div class="pc-overlay" aria-hidden="true">
+                  <div class="pc-overlay-inner">
+                    <p>Dairy business management made simple</p>
+                    <div class="pc-overlay-btns">
+                      <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener noreferrer" class="pc-btn">
+                        <i class="bi bi-github"></i> Code
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="pc-content">
-              <div class="pc-top-row">
-                <div class="pc-category"><i class="bi bi-droplet-half"></i> Dairy · Business Software</div>
-                <div class="pc-deploy-badge"><i class="bi bi-hdd-network"></i> Web App</div>
+
+            <div class="pc-body">
+              <div class="pc-meta">
+                <span class="pc-tag"><i class="bi bi-droplet-half" aria-hidden="true"></i> Software</span>
+                <span class="pc-badge">Selected Work</span>
               </div>
               <h3 class="pc-title">Milk Management System</h3>
-              <p class="pc-tagline">Dairy Business Management &amp; Direct Buyer Connection</p>
-              <div class="pc-problem">
-                <i class="bi bi-lightbulb"></i>
-                <span>Dairy businesses lose profits through middlemen. This system automates operations and connects with buyers directly.</span>
-              </div>
+              <p class="pc-tagline">Dairy Business Operations &amp; Direct Buyer Connection</p>
+              <p class="pc-desc">Automates dairy collection tracking, rate management and connects businesses directly with buyers, cutting out middlemen.</p>
               <div class="pc-features">
-                <span><i class="bi bi-check2"></i> Milk Collection Tracking</span>
-                <span><i class="bi bi-check2"></i> Rate Management</span>
-                <span><i class="bi bi-check2"></i> Direct Buyer Connect</span>
-                <span><i class="bi bi-check2"></i> Reports &amp; Analytics</span>
+                <span>Collection Tracking</span>
+                <span>Rate Management</span>
+                <span>Direct Buyer Connect</span>
+                <span>Analytics</span>
               </div>
               <div class="pc-stack">
-                <span class="pcs react">React.js</span>
-                <span class="pcs dotnet">ASP.NET Web API</span>
-                <span class="pcs sql">SQL Server</span>
+                <span class="tech-chip react">React.js</span>
+                <span class="tech-chip dotnet">ASP.NET</span>
+                <span class="tech-chip sql">SQL Server</span>
               </div>
-              <div class="pc-footer-actions">
-                <a href="#contact" class="btn btn-primary btn-sm"><i class="bi bi-send"></i> Build Similar</a>
-                <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener" class="btn btn-ghost btn-sm"><i class="bi bi-github"></i> Code</a>
+              <div class="pc-footer">
+                <a href="#contact" class="btn btn-primary btn-sm"><i class="bi bi-send" aria-hidden="true"></i> Build Similar</a>
+                <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm"><i class="bi bi-github" aria-hidden="true"></i></a>
               </div>
             </div>
-          </div>
+          </article>
 
-          <div class="project-card" data-tags="aspnet sqlserver" data-aos="fade-up" data-aos-delay="200">
-            <div class="pc-img-wrapper">
-              <div class="pc-screen-frame">
-                <div class="pc-screen-dots"><span></span><span></span><span></span></div>
-                <img src="assets/img/portfolio/portfolio-10.webp" alt="Staff Task Management System" class="pc-img">
+          <!-- Staff Task Management -->
+          <article class="project-card" data-tags="software" data-aos="fade-up" data-aos-delay="160">
+            <div class="pc-img-area">
+              <div class="pc-browser-chrome" aria-hidden="true">
+                <div class="pc-chrome-dots"><span></span><span></span><span></span></div>
               </div>
-              <div class="pc-overlay">
-                <div class="pc-overlay-content">
-                  <p class="pc-overlay-text">Streamline team productivity and task accountability</p>
-                  <div class="pc-actions">
-                    <a href="#contact" class="pc-btn"><i class="bi bi-eye"></i> Demo</a>
-                    <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener" class="pc-btn"><i class="bi bi-github"></i> Code</a>
+              <div class="pc-img-wrap">
+                <img src="assets/img/portfolio/portfolio-10.webp"
+                     alt="Staff Task Management System — Employee and Task Management for Businesses"
+                     class="pc-img" loading="lazy">
+                <div class="pc-overlay" aria-hidden="true">
+                  <div class="pc-overlay-inner">
+                    <p>Streamline team productivity and task accountability</p>
+                    <div class="pc-overlay-btns">
+                      <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener noreferrer" class="pc-btn">
+                        <i class="bi bi-github"></i> Code
+                      </a>
+                    </div>
                   </div>
                 </div>
               </div>
             </div>
-            <div class="pc-content">
-              <div class="pc-top-row">
-                <div class="pc-category"><i class="bi bi-kanban"></i> Business Software · HR</div>
-                <div class="pc-deploy-badge"><i class="bi bi-hdd-network"></i> Web App</div>
+
+            <div class="pc-body">
+              <div class="pc-meta">
+                <span class="pc-tag"><i class="bi bi-kanban" aria-hidden="true"></i> Software</span>
+                <span class="pc-badge">Selected Work</span>
               </div>
               <h3 class="pc-title">Staff Task Management</h3>
               <p class="pc-tagline">Employee &amp; Task Management for Business Owners</p>
-              <div class="pc-problem">
-                <i class="bi bi-lightbulb"></i>
-                <span>Business owners need visibility into staff tasks and accountability — this system brings full control in one dashboard.</span>
-              </div>
+              <p class="pc-desc">Gives business owners full visibility into staff activity with task assignment, progress tracking and a reporting dashboard.</p>
               <div class="pc-features">
-                <span><i class="bi bi-check2"></i> Employee Management</span>
-                <span><i class="bi bi-check2"></i> Task Assignment</span>
-                <span><i class="bi bi-check2"></i> Progress Tracking</span>
-                <span><i class="bi bi-check2"></i> Reporting Dashboard</span>
+                <span>Employee Management</span>
+                <span>Task Assignment</span>
+                <span>Progress Tracking</span>
+                <span>Reporting</span>
               </div>
               <div class="pc-stack">
-                <span class="pcs html">HTML/CSS/JS</span>
-                <span class="pcs dotnet">ASP.NET</span>
-                <span class="pcs sql">SQL Server</span>
+                <span class="tech-chip html">HTML/CSS/JS</span>
+                <span class="tech-chip dotnet">ASP.NET</span>
+                <span class="tech-chip sql">SQL Server</span>
               </div>
-              <div class="pc-footer-actions">
-                <a href="#contact" class="btn btn-primary btn-sm"><i class="bi bi-send"></i> Build Similar</a>
-                <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener" class="btn btn-ghost btn-sm"><i class="bi bi-github"></i> Code</a>
+              <div class="pc-footer">
+                <a href="#contact" class="btn btn-primary btn-sm"><i class="bi bi-send" aria-hidden="true"></i> Build Similar</a>
+                <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener noreferrer" class="btn btn-ghost btn-sm"><i class="bi bi-github" aria-hidden="true"></i></a>
               </div>
+            </div>
+          </article>
+
+          <!-- Hotel Concept Demo -->
+          <article class="project-card" data-tags="website demo" data-aos="fade-up" data-aos-delay="0">
+            <div class="pc-img-area">
+              <div class="pc-browser-chrome" aria-hidden="true">
+                <div class="pc-chrome-dots"><span></span><span></span><span></span></div>
+              </div>
+              <div class="pc-img-wrap">
+                <img src="assets/img/person/Hotel.png"
+                     alt="Hotel Website Concept Demo — modern hospitality website design"
+                     class="pc-img" loading="lazy">
+                <div class="pc-overlay" aria-hidden="true">
+                  <div class="pc-overlay-inner">
+                    <p>Modern hospitality experience concept</p>
+                    <div class="pc-overlay-btns">
+                      <a href="#contact" class="pc-btn">
+                        <i class="bi bi-eye"></i> Discuss Build
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pc-body">
+              <div class="pc-meta">
+                <span class="pc-tag"><i class="bi bi-building" aria-hidden="true"></i> Website</span>
+                <span class="pc-badge demo-badge">Concept Demo</span>
+              </div>
+              <h3 class="pc-title">Hotel Website Concept</h3>
+              <p class="pc-tagline">Modern Hospitality Digital Experience</p>
+              <p class="pc-desc">A concept exploring what a premium hotel's online presence could look like — focused on conversion, bookings and first impressions.</p>
+              <div class="pc-features">
+                <span>Booking Flow</span>
+                <span>Room Showcase</span>
+                <span>Gallery</span>
+                <span>Mobile-First</span>
+              </div>
+              <div class="pc-stack">
+                <span class="tech-chip html">HTML/CSS/JS</span>
+              </div>
+              <div class="pc-footer">
+                <a href="#contact" class="btn btn-primary btn-sm"><i class="bi bi-send" aria-hidden="true"></i> Build for My Business</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- E-commerce Concept Demo -->
+          <article class="project-card" data-tags="website demo" data-aos="fade-up" data-aos-delay="80">
+            <div class="pc-img-area">
+              <div class="pc-browser-chrome" aria-hidden="true">
+                <div class="pc-chrome-dots"><span></span><span></span><span></span></div>
+              </div>
+              <div class="pc-img-wrap">
+                <img src="assets/img/person/E-commerce.png"
+                     alt="E-commerce Website Concept Demo — online store design and UX"
+                     class="pc-img" loading="lazy">
+                <div class="pc-overlay" aria-hidden="true">
+                  <div class="pc-overlay-inner">
+                    <p>Clean shopping experience concept</p>
+                    <div class="pc-overlay-btns">
+                      <a href="#contact" class="pc-btn">
+                        <i class="bi bi-eye"></i> Discuss Build
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pc-body">
+              <div class="pc-meta">
+                <span class="pc-tag"><i class="bi bi-cart4" aria-hidden="true"></i> Website</span>
+                <span class="pc-badge demo-badge">Concept Demo</span>
+              </div>
+              <h3 class="pc-title">E-commerce Concept</h3>
+              <p class="pc-tagline">Online Store UI/UX Exploration</p>
+              <p class="pc-desc">A concept exploring a clean, conversion-focused online store experience — focused on product presentation and seamless checkout flow.</p>
+              <div class="pc-features">
+                <span>Product Catalog</span>
+                <span>Clean UI</span>
+                <span>Cart Flow</span>
+                <span>Responsive</span>
+              </div>
+              <div class="pc-stack">
+                <span class="tech-chip html">HTML/CSS/JS</span>
+              </div>
+              <div class="pc-footer">
+                <a href="#contact" class="btn btn-primary btn-sm"><i class="bi bi-send" aria-hidden="true"></i> Build for My Business</a>
+              </div>
+            </div>
+          </article>
+
+          <!-- Additional portfolio items -->
+          <article class="project-card" data-tags="website demo" data-aos="fade-up" data-aos-delay="160">
+            <div class="pc-img-area">
+              <div class="pc-browser-chrome" aria-hidden="true">
+                <div class="pc-chrome-dots"><span></span><span></span><span></span></div>
+              </div>
+              <div class="pc-img-wrap">
+                <img src="assets/img/portfolio/portfolio-11.webp"
+                     alt="Selected digital showcase — web development concept"
+                     class="pc-img" loading="lazy">
+                <div class="pc-overlay" aria-hidden="true">
+                  <div class="pc-overlay-inner">
+                    <p>Digital concept exploration</p>
+                    <div class="pc-overlay-btns">
+                      <a href="#contact" class="pc-btn">
+                        <i class="bi bi-eye"></i> Discuss
+                      </a>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <div class="pc-body">
+              <div class="pc-meta">
+                <span class="pc-tag"><i class="bi bi-layers" aria-hidden="true"></i> Development</span>
+                <span class="pc-badge">Development Showcase</span>
+              </div>
+              <h3 class="pc-title">Development Showcase</h3>
+              <p class="pc-tagline">UI &amp; Frontend Development Exploration</p>
+              <p class="pc-desc">A selected development showcase highlighting clean interface structure, layout patterns and frontend implementation techniques.</p>
+              <div class="pc-features">
+                <span>UI Design</span>
+                <span>Layout</span>
+                <span>Responsive</span>
+                <span>Performance</span>
+              </div>
+              <div class="pc-stack">
+                <span class="tech-chip html">HTML/CSS/JS</span>
+              </div>
+              <div class="pc-footer">
+                <a href="#contact" class="btn btn-primary btn-sm"><i class="bi bi-send" aria-hidden="true"></i> Start a Project</a>
+              </div>
+            </div>
+          </article>
+
+        </div><!-- /projects-grid -->
+
+        <!-- GitHub CTA -->
+        <div class="work-cta" data-aos="fade-up">
+          <div class="work-cta-inner">
+            <div class="wc-icon" aria-hidden="true"><i class="bi bi-github"></i></div>
+            <div class="wc-text">
+              <h3>More on GitHub</h3>
+              <p>Code, experiments and development builds are available on GitHub.</p>
+            </div>
+            <div class="wc-actions">
+              <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener noreferrer" class="btn btn-ghost">
+                <i class="bi bi-github" aria-hidden="true"></i> View GitHub
+              </a>
+              <a href="#contact" class="btn btn-primary">
+                <i class="bi bi-chat-dots" aria-hidden="true"></i> Discuss a Project
+              </a>
             </div>
           </div>
-
         </div>
 
-        <div class="projects-cta" data-aos="fade-up">
-          <div class="pcta-inner">
-            <div class="pcta-icon"><i class="bi bi-rocket-takeoff"></i></div>
-            <div class="pcta-text">
-              <h3>Need a Similar Solution for Your Business?</h3>
-              <p>I build custom platforms, marketplaces, management systems and business software tailored to your needs.</p>
-            </div>
-            <div class="pcta-actions">
-              <a href="#contact" class="btn btn-primary"><i class="bi bi-chat-dots"></i> Discuss Your Project</a>
-              <a href="https://wa.me/917588174528?text=Hi%20Mahesh%2C%20I%20want%20to%20discuss%20a%20project" class="btn btn-whatsapp" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp</a>
+      </div><!-- /container -->
+    </section>
+
+    <!-- ═══════════════ DIFFERENTIATOR — I DON'T JUST SHOW ═══════════════ -->
+    <section id="differentiator" class="section diff-section alt-bg">
+      <div class="container">
+        <div class="diff-layout" data-aos="fade-up">
+          <div class="diff-text-col">
+            <div class="section-label">The Approach</div>
+            <h2 class="section-heading">I Don't Just Show What I Can Build.<br><span class="gradient-text">I Build It.</span></h2>
+            <p class="diff-body">
+              I explore real businesses, identify opportunities to improve their online presence, and build concepts that demonstrate what their digital experience could look like.
+            </p>
+            <p class="diff-body">
+              This isn't a portfolio of theoretical ideas — every project starts with a real business problem and ends with something you can see, interact with and evaluate.
+            </p>
+            <a href="#contact" class="btn btn-primary" style="margin-top:8px">
+              <i class="bi bi-lightning-charge" aria-hidden="true"></i> Start a Build
+            </a>
+          </div>
+
+          <div class="diff-process-col">
+            <div class="process-flow" aria-label="Build process">
+              <div class="pf-step" data-aos="fade-left" data-aos-delay="0">
+                <div class="pf-num">01</div>
+                <div class="pf-content">
+                  <i class="bi bi-search" aria-hidden="true"></i>
+                  <div>
+                    <strong>FIND</strong>
+                    <p>Discover a business with an opportunity online</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pf-connector" aria-hidden="true"></div>
+              <div class="pf-step" data-aos="fade-left" data-aos-delay="80">
+                <div class="pf-num">02</div>
+                <div class="pf-content">
+                  <i class="bi bi-eye" aria-hidden="true"></i>
+                  <div>
+                    <strong>ANALYZE</strong>
+                    <p>Identify what could be improved or built</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pf-connector" aria-hidden="true"></div>
+              <div class="pf-step" data-aos="fade-left" data-aos-delay="160">
+                <div class="pf-num">03</div>
+                <div class="pf-content">
+                  <i class="bi bi-code-slash" aria-hidden="true"></i>
+                  <div>
+                    <strong>BUILD</strong>
+                    <p>Create a real demo of the digital experience</p>
+                  </div>
+                </div>
+              </div>
+              <div class="pf-connector" aria-hidden="true"></div>
+              <div class="pf-step" data-aos="fade-left" data-aos-delay="240">
+                <div class="pf-num">04</div>
+                <div class="pf-content">
+                  <i class="bi bi-megaphone" aria-hidden="true"></i>
+                  <div>
+                    <strong>PITCH</strong>
+                    <p>Show the business owner what's possible</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== WHY CHOOSE ME ===== -->
-    <section id="why-choose" class="section why-section">
+    <!-- ═══════════════ SERVICES ═══════════════ -->
+    <section id="services" class="section services-section">
       <div class="container">
         <div class="section-header" data-aos="fade-up">
-          <div class="section-label">Why Work With Me</div>
-          <h2 class="section-heading">Why Businesses <span class="gradient-text">Choose Me</span></h2>
-          <p class="section-sub">Not just a developer — a digital partner who understands business problems and builds solutions that work.</p>
+          <div class="section-label">Services</div>
+          <h2 class="section-heading">What I <span class="gradient-text">Build</span></h2>
+          <p class="section-sub">Digital solutions designed around the business and built for real-world use.</p>
         </div>
 
-        <div class="why-grid">
-          <div class="why-card" data-aos="fade-up" data-aos-delay="0">
-            <div class="why-icon"><i class="bi bi-code-square"></i></div>
-            <h4>Custom Development</h4>
-            <p>No generic templates. Every project is built from scratch specifically for your business requirements.</p>
+        <div class="services-grid">
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="svc-icon"><i class="bi bi-layout-wtf" aria-hidden="true"></i></div>
+            <h3>Website Design</h3>
+            <p>Modern, responsive websites designed around the business and its customers. Every layout decision is intentional.</p>
+            <ul class="svc-features">
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Responsive layouts</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Brand-aligned visuals</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> User-focused structure</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> SEO foundations</li>
+            </ul>
           </div>
-          <div class="why-card" data-aos="fade-up" data-aos-delay="80">
-            <div class="why-icon"><i class="bi bi-person-check"></i></div>
-            <h4>Direct Communication</h4>
-            <p>You work directly with me — no middlemen, no project managers. Fast responses and clear updates.</p>
+
+          <div class="service-card service-featured" data-aos="fade-up" data-aos-delay="60">
+            <div class="svc-featured-tag">Core Service</div>
+            <div class="svc-icon"><i class="bi bi-code-slash" aria-hidden="true"></i></div>
+            <h3>Website Development</h3>
+            <p>Fast, responsive and functional websites built for real-world use. Clean code, real performance, proper structure.</p>
+            <ul class="svc-features">
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Custom development</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Performance optimized</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Cross-device tested</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Secure &amp; maintainable</li>
+            </ul>
           </div>
-          <div class="why-card" data-aos="fade-up" data-aos-delay="160">
-            <div class="why-icon"><i class="bi bi-currency-rupee"></i></div>
-            <h4>Affordable Solutions</h4>
-            <p>Enterprise-quality software designed for budgets of startups and small businesses in India.</p>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="svc-icon"><i class="bi bi-bullseye" aria-hidden="true"></i></div>
+            <h3>Landing Pages</h3>
+            <p>High-converting landing pages for businesses, campaigns and products. Built to communicate clearly and convert visitors.</p>
+            <ul class="svc-features">
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Conversion-focused</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Fast load time</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Clear call to action</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Mobile-first</li>
+            </ul>
           </div>
-          <div class="why-card" data-aos="fade-up" data-aos-delay="240">
-            <div class="why-icon"><i class="bi bi-arrow-up-circle"></i></div>
-            <h4>Scalable Architecture</h4>
-            <p>Your software is built to grow with your business — add features anytime without rebuilding.</p>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="svc-icon"><i class="bi bi-palette" aria-hidden="true"></i></div>
+            <h3>UI/UX Design</h3>
+            <p>Clean interfaces and user experiences focused on clarity and usability. Design that serves the user, not just the brand.</p>
+            <ul class="svc-features">
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Interface design</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> User flow design</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Accessibility aware</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Design systems</li>
+            </ul>
           </div>
-          <div class="why-card" data-aos="fade-up" data-aos-delay="320">
-            <div class="why-icon"><i class="bi bi-headset"></i></div>
-            <h4>Support After Launch</h4>
-            <p>I remain available after deployment for bug fixes, updates and new feature development.</p>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="60">
+            <div class="svc-icon"><i class="bi bi-arrow-repeat" aria-hidden="true"></i></div>
+            <h3>Website Redesign</h3>
+            <p>Improving outdated websites with modern design, better structure and responsive layouts that actually represent the business.</p>
+            <ul class="svc-features">
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Modern design</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Better structure</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Responsive upgrade</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Performance improvements</li>
+            </ul>
           </div>
-          <div class="why-card" data-aos="fade-up" data-aos-delay="400">
-            <div class="why-icon"><i class="bi bi-shield-check"></i></div>
-            <h4>Secure &amp; Reliable</h4>
-            <p>Built with security best practices — your business data and customer information is always protected.</p>
+
+          <div class="service-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="svc-icon"><i class="bi bi-globe2" aria-hidden="true"></i></div>
+            <h3>Digital Business Presence</h3>
+            <p>Helping businesses establish a professional presence online — from first impression to ongoing credibility.</p>
+            <ul class="svc-features">
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Brand positioning</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Online presence</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> Contact infrastructure</li>
+              <li><i class="bi bi-check2" aria-hidden="true"></i> SEO foundations</li>
+            </ul>
+          </div>
+
+        </div>
+
+        <div class="services-cta" data-aos="fade-up">
+          <p>Have a business that needs a better digital presence?</p>
+          <a href="#contact" class="btn btn-primary"><i class="bi bi-chat-dots" aria-hidden="true"></i> Let's Talk</a>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- ═══════════════ BUILD IN PUBLIC ═══════════════ -->
+    <section id="instagram" class="section bip-section alt-bg">
+      <div class="container">
+        <div class="bip-layout" data-aos="fade-up">
+          <div class="bip-text">
+            <div class="section-label">Building In Public</div>
+            <h2 class="section-heading">Watch the <span class="gradient-text">Builds</span></h2>
+            <p class="bip-body">
+              Follow the process behind the builds — from discovering businesses and identifying opportunities to creating demos and pitching the idea.
+            </p>
+            <p class="bip-body">
+              Every build is documented. Every pitch is real. Every outcome — whether yes or no — is part of the journey.
+            </p>
+            <a href="https://instagram.com/buildwithmahesh" target="_blank" rel="noopener noreferrer" class="btn btn-instagram">
+              <i class="bi bi-instagram" aria-hidden="true"></i>
+              Follow @buildwithmahesh
+            </a>
+            <!-- TODO: Update Instagram handle/URL when confirmed -->
+          </div>
+
+          <div class="bip-timeline">
+            <div class="bip-step" data-aos="fade-left" data-aos-delay="0">
+              <div class="bip-step-num">01</div>
+              <div class="bip-step-text">
+                <strong>Find a Business</strong>
+                <p>Spot a business with an online presence that could be better</p>
+              </div>
+            </div>
+            <div class="bip-step" data-aos="fade-left" data-aos-delay="60">
+              <div class="bip-step-num">02</div>
+              <div class="bip-step-text">
+                <strong>Identify the Problem</strong>
+                <p>Understand what's missing or what could be significantly improved</p>
+              </div>
+            </div>
+            <div class="bip-step" data-aos="fade-left" data-aos-delay="120">
+              <div class="bip-step-num">03</div>
+              <div class="bip-step-text">
+                <strong>Design the Solution</strong>
+                <p>Plan what the improved digital experience should look and work like</p>
+              </div>
+            </div>
+            <div class="bip-step" data-aos="fade-left" data-aos-delay="180">
+              <div class="bip-step-num">04</div>
+              <div class="bip-step-text">
+                <strong>Build the Demo</strong>
+                <p>Create a real, working version of what's possible</p>
+              </div>
+            </div>
+            <div class="bip-step" data-aos="fade-left" data-aos-delay="240">
+              <div class="bip-step-num">05</div>
+              <div class="bip-step-text">
+                <strong>Pitch the Idea</strong>
+                <p>Approach the business and show them what was built</p>
+              </div>
+            </div>
+            <div class="bip-step bip-step-last" data-aos="fade-left" data-aos-delay="300">
+              <div class="bip-step-num">06</div>
+              <div class="bip-step-text">
+                <strong>See What Happens</strong>
+                <p>Document the outcome — win, learn, and build the next one</p>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== WORK PROCESS ===== -->
-    <section id="process" class="section process-section alt-bg">
+    <!-- ═══════════════ BUILD PROCESS ═══════════════ -->
+    <section id="process" class="section process-section">
       <div class="container">
         <div class="section-header" data-aos="fade-up">
           <div class="section-label">How It Works</div>
-          <h2 class="section-heading">My Work <span class="gradient-text">Process</span></h2>
-          <p class="section-sub">A clear, transparent process from first conversation to final delivery and beyond.</p>
+          <h2 class="section-heading">The Build <span class="gradient-text">Process</span></h2>
+          <p class="section-sub">A clear, transparent process — from first conversation to final delivery and ongoing support.</p>
         </div>
 
-        <div class="process-timeline">
+        <div class="process-steps">
           <div class="process-step" data-aos="fade-up" data-aos-delay="0">
-            <div class="ps-number">01</div>
-            <div class="ps-content">
-              <div class="ps-icon"><i class="bi bi-chat-dots"></i></div>
-              <h4>Discussion</h4>
-              <p>We talk about your business, your goals and what you want to build. Free consultation via WhatsApp or call.</p>
+            <div class="ps-num">01</div>
+            <div class="ps-body">
+              <div class="ps-icon"><i class="bi bi-chat-dots" aria-hidden="true"></i></div>
+              <div>
+                <h4>Understand the Business</h4>
+                <p>We talk about your business, your goals and what you want to build. Free initial conversation.</p>
+              </div>
             </div>
           </div>
-          <div class="process-connector"></div>
-          <div class="process-step" data-aos="fade-up" data-aos-delay="80">
-            <div class="ps-number">02</div>
-            <div class="ps-content">
-              <div class="ps-icon"><i class="bi bi-file-text"></i></div>
-              <h4>Requirement Gathering</h4>
-              <p>I document all features, pages, integrations and technical requirements for your project.</p>
+          <div class="ps-connector" aria-hidden="true"></div>
+          <div class="process-step" data-aos="fade-up" data-aos-delay="60">
+            <div class="ps-num">02</div>
+            <div class="ps-body">
+              <div class="ps-icon"><i class="bi bi-file-text" aria-hidden="true"></i></div>
+              <div>
+                <h4>Define the Scope</h4>
+                <p>Document all features, pages, integrations and technical requirements for your project.</p>
+              </div>
             </div>
           </div>
-          <div class="process-connector"></div>
-          <div class="process-step" data-aos="fade-up" data-aos-delay="160">
-            <div class="ps-number">03</div>
-            <div class="ps-content">
-              <div class="ps-icon"><i class="bi bi-diagram-3"></i></div>
-              <h4>Planning</h4>
-              <p>I create a project plan with timeline, milestones, tech stack and budget estimate for approval.</p>
+          <div class="ps-connector" aria-hidden="true"></div>
+          <div class="process-step" data-aos="fade-up" data-aos-delay="120">
+            <div class="ps-num">03</div>
+            <div class="ps-body">
+              <div class="ps-icon"><i class="bi bi-diagram-3" aria-hidden="true"></i></div>
+              <div>
+                <h4>Plan &amp; Design</h4>
+                <p>Project plan with timeline, milestones and design direction for your approval before building begins.</p>
+              </div>
             </div>
           </div>
-          <div class="process-connector"></div>
+          <div class="ps-connector" aria-hidden="true"></div>
+          <div class="process-step" data-aos="fade-up" data-aos-delay="180">
+            <div class="ps-num">04</div>
+            <div class="ps-body">
+              <div class="ps-icon"><i class="bi bi-code-slash" aria-hidden="true"></i></div>
+              <div>
+                <h4>Build</h4>
+                <p>Development with regular updates and progress previews so you're always informed.</p>
+              </div>
+            </div>
+          </div>
+          <div class="ps-connector" aria-hidden="true"></div>
           <div class="process-step" data-aos="fade-up" data-aos-delay="240">
-            <div class="ps-number">04</div>
-            <div class="ps-content">
-              <div class="ps-icon"><i class="bi bi-code-slash"></i></div>
-              <h4>Development</h4>
-              <p>I build your project with regular updates and progress demos so you always know the status.</p>
+            <div class="ps-num">05</div>
+            <div class="ps-body">
+              <div class="ps-icon"><i class="bi bi-check2-square" aria-hidden="true"></i></div>
+              <div>
+                <h4>Test &amp; Refine</h4>
+                <p>Thorough testing across devices and browsers. You review and approve before anything goes live.</p>
+              </div>
             </div>
           </div>
-          <div class="process-connector"></div>
-          <div class="process-step" data-aos="fade-up" data-aos-delay="320">
-            <div class="ps-number">05</div>
-            <div class="ps-content">
-              <div class="ps-icon"><i class="bi bi-bug"></i></div>
-              <h4>Testing</h4>
-              <p>Thorough testing across devices and browsers before anything goes live. You test it too.</p>
-            </div>
-          </div>
-          <div class="process-connector"></div>
-          <div class="process-step" data-aos="fade-up" data-aos-delay="400">
-            <div class="ps-number">06</div>
-            <div class="ps-content">
-              <div class="ps-icon"><i class="bi bi-cloud-upload"></i></div>
-              <h4>Deployment</h4>
-              <p>Your project goes live on your domain with proper hosting, SSL and performance optimization.</p>
-            </div>
-          </div>
-          <div class="process-connector"></div>
-          <div class="process-step" data-aos="fade-up" data-aos-delay="480">
-            <div class="ps-number">07</div>
-            <div class="ps-content">
-              <div class="ps-icon"><i class="bi bi-headset"></i></div>
-              <h4>Support</h4>
-              <p>Ongoing support, maintenance and feature additions as your business grows.</p>
+          <div class="ps-connector" aria-hidden="true"></div>
+          <div class="process-step" data-aos="fade-up" data-aos-delay="300">
+            <div class="ps-num">06</div>
+            <div class="ps-body">
+              <div class="ps-icon"><i class="bi bi-rocket-takeoff" aria-hidden="true"></i></div>
+              <div>
+                <h4>Launch &amp; Support</h4>
+                <p>Goes live with proper hosting, SSL and performance optimization. Ongoing support available after launch.</p>
+              </div>
             </div>
           </div>
         </div>
 
-        <div class="inline-cta" data-aos="fade-up">
-          <p>Ready to start your project?</p>
-          <a href="#contact" class="btn btn-primary"><i class="bi bi-chat-dots"></i> Start With a Free Consultation</a>
+        <div class="process-cta" data-aos="fade-up">
+          <p>Ready to start?</p>
+          <a href="#contact" class="btn btn-primary"><i class="bi bi-lightning-charge" aria-hidden="true"></i> Start the Process</a>
         </div>
+
       </div>
     </section>
 
-    <!-- ===== TECH STACK SECTION ===== -->
-    <section id="skills" class="section skills-section">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <div class="section-label">Technology</div>
-          <h2 class="section-heading">Tech Stack I <span class="gradient-text">Use</span></h2>
-          <p class="section-sub">Battle-tested technologies to build reliable, scalable and maintainable software for your business.</p>
-        </div>
-
-        <div class="tech-stack-grid" data-aos="fade-up" data-aos-delay="100">
-          <div class="tech-category">
-            <div class="tc-header">
-              <i class="bi bi-server"></i>
-              <h4>Backend</h4>
-            </div>
-            <div class="tc-pills">
-              <span class="tc-pill">ASP.NET Core</span>
-              <span class="tc-pill">C#</span>
-              <span class="tc-pill">Entity Framework</span>
-              <span class="tc-pill">SQL Server</span>
-              <span class="tc-pill">REST APIs</span>
-              <span class="tc-pill">JWT Auth</span>
-            </div>
-          </div>
-          <div class="tech-category">
-            <div class="tc-header">
-              <i class="bi bi-display"></i>
-              <h4>Frontend</h4>
-            </div>
-            <div class="tc-pills">
-              <span class="tc-pill">React.js</span>
-              <span class="tc-pill">JavaScript</span>
-              <span class="tc-pill">HTML5</span>
-              <span class="tc-pill">CSS3</span>
-              <span class="tc-pill">Bootstrap</span>
-              <span class="tc-pill">Responsive Design</span>
-            </div>
-          </div>
-          <div class="tech-category">
-            <div class="tc-header">
-              <i class="bi bi-cloud"></i>
-              <h4>Cloud &amp; Hosting</h4>
-            </div>
-            <div class="tc-pills">
-              <span class="tc-pill">Microsoft Azure</span>
-              <span class="tc-pill">Azure App Services</span>
-              <span class="tc-pill">IIS Hosting</span>
-              <span class="tc-pill">SSL &amp; Security</span>
-            </div>
-          </div>
-          <div class="tech-category">
-            <div class="tc-header">
-              <i class="bi bi-tools"></i>
-              <h4>Tools</h4>
-            </div>
-            <div class="tc-pills">
-              <span class="tc-pill">Git &amp; GitHub</span>
-              <span class="tc-pill">Visual Studio</span>
-              <span class="tc-pill">Swagger</span>
-              <span class="tc-pill">Postman</span>
-              <span class="tc-pill">SSMS</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== ABOUT SECTION ===== -->
+    <!-- ═══════════════ ABOUT ═══════════════ -->
     <section id="about" class="section about-section alt-bg">
       <div class="container">
-        <div class="about-grid">
+        <div class="about-layout">
+
           <div class="about-img-col" data-aos="fade-right">
-            <div class="about-img-wrapper">
-              <img src="assets/img/profile/MaheshJagzapImg.jpg" alt="Mahesh Jagzap – Freelance Web Developer, Maharashtra" class="about-img">
-              <div class="about-exp-badge">
-                <span class="exp-num">4+</span>
-                <span class="exp-label">Years Building</span>
+            <div class="about-img-frame">
+              <img src="assets/img/profile/MaheshJagzapImg.jpg"
+                   alt="The person behind MAHESH BUILDS"
+                   class="about-img" loading="lazy">
+              <div class="about-img-badge" aria-label="Years of building">
+                <span class="badge-num">4+</span>
+                <span class="badge-lbl">Years Building</span>
               </div>
             </div>
           </div>
 
           <div class="about-content-col" data-aos="fade-left" data-aos-delay="100">
-            <div class="section-label">About Me</div>
-            <h2 class="section-heading">The Developer Behind <span class="gradient-text">Your Project</span></h2>
+            <div class="section-label">About MAHESH BUILDS</div>
+            <h2 class="section-heading">A Digital Building Space<br><span class="gradient-text">For Businesses</span></h2>
+
             <p class="about-lead">
-              I'm Mahesh Jagzap — a full stack developer from Maharashtra, India who builds custom websites and business software for hotels, restaurants, shops, manufacturers and startups.
+              MAHESH BUILDS is a digital building space focused on creating modern websites, interfaces and digital experiences for businesses.
             </p>
-            <p class="about-text">
-              Coming from an agricultural background, I understand the real challenges businesses face. I don't just write code — I build digital solutions that solve actual problems, improve operations and help businesses grow revenue.
+            <p class="about-body">
+              The focus is on building digital experiences that genuinely serve businesses — not generic templates or cookie-cutter solutions. Every build starts with understanding the business first.
             </p>
-            <p class="about-text">
-              Currently working as Associate Software Developer at <strong>Futurism Technologies Pvt. Ltd.</strong> in Pune, I specialize in ASP.NET Web API, React.js, SQL Server and Azure cloud deployments.
+            <p class="about-body">
+              The brand is also a documentation of the journey — finding businesses, identifying opportunities, building demos, and pitching the idea. Follow that journey on Instagram.
             </p>
 
-            <div class="about-info-grid">
-              <div class="info-chip"><i class="bi bi-geo-alt"></i> Maharashtra, India</div>
-              <div class="info-chip"><i class="bi bi-whatsapp"></i> +91 7588174528</div>
-              <div class="info-chip"><i class="bi bi-envelope"></i> maheshjagzap03@gmail.com</div>
-              <div class="info-chip"><i class="bi bi-microsoft"></i> Azure Certified</div>
-              <div class="info-chip"><i class="bi bi-check-circle"></i> Available for Projects</div>
+            <div class="about-pillars">
+              <div class="pillar-item">
+                <i class="bi bi-eye" aria-hidden="true"></i>
+                <span>Clean Design</span>
+              </div>
+              <div class="pillar-item">
+                <i class="bi bi-phone" aria-hidden="true"></i>
+                <span>Responsive Experience</span>
+              </div>
+              <div class="pillar-item">
+                <i class="bi bi-building" aria-hidden="true"></i>
+                <span>Business-Focused</span>
+              </div>
+              <div class="pillar-item">
+                <i class="bi bi-lightning-charge" aria-hidden="true"></i>
+                <span>Fast Performance</span>
+              </div>
+              <div class="pillar-item">
+                <i class="bi bi-people" aria-hidden="true"></i>
+                <span>Clear User Experience</span>
+              </div>
+              <div class="pillar-item">
+                <i class="bi bi-code-slash" aria-hidden="true"></i>
+                <span>Modern Technology</span>
+              </div>
             </div>
 
             <div class="about-actions">
-              <a href="#contact" class="btn btn-primary"><i class="bi bi-chat-dots"></i> Discuss Your Project</a>
-              <a href="https://wa.me/917588174528?text=Hi%20Mahesh%2C%20I%20want%20to%20discuss%20a%20project" class="btn btn-whatsapp" target="_blank" rel="noopener">
-                <i class="bi bi-whatsapp"></i> WhatsApp Me
-              </a>
+              <a href="#work" class="btn btn-primary"><i class="bi bi-grid" aria-hidden="true"></i> See the Work</a>
+              <a href="#contact" class="btn btn-ghost">Start a Project <i class="bi bi-arrow-right" aria-hidden="true"></i></a>
             </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- ═══════════════ WHAT I FOCUS ON (Social Proof Alternative) ═══════════════ -->
+    <section id="focus" class="section focus-section">
+      <div class="container">
+        <div class="section-header" data-aos="fade-up">
+          <div class="section-label">Quality Standards</div>
+          <h2 class="section-heading">What I Focus <span class="gradient-text">On</span></h2>
+          <p class="section-sub">These aren't marketing claims — they're the principles every build is measured against.</p>
+        </div>
+
+        <div class="focus-grid">
+          <div class="focus-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="focus-icon"><i class="bi bi-palette2" aria-hidden="true"></i></div>
+            <h4>Clean Design</h4>
+            <p>Every visual decision has a purpose. No unnecessary decoration, no visual noise — just clarity and intentional hierarchy.</p>
+          </div>
+          <div class="focus-card" data-aos="fade-up" data-aos-delay="60">
+            <div class="focus-icon"><i class="bi bi-phone" aria-hidden="true"></i></div>
+            <h4>Responsive Experience</h4>
+            <p>Layouts that feel intentionally designed on every screen size — not just a compressed version of the desktop site.</p>
+          </div>
+          <div class="focus-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="focus-icon"><i class="bi bi-building" aria-hidden="true"></i></div>
+            <h4>Business-Focused Thinking</h4>
+            <p>The design and build serves the business goal first. Every decision is evaluated against: does this help the business?</p>
+          </div>
+          <div class="focus-card" data-aos="fade-up" data-aos-delay="0">
+            <div class="focus-icon"><i class="bi bi-speedometer2" aria-hidden="true"></i></div>
+            <h4>Fast Performance</h4>
+            <p>Optimized for real-world conditions — fast on mobile, lean assets, no bloated dependencies. Speed is a feature.</p>
+          </div>
+          <div class="focus-card" data-aos="fade-up" data-aos-delay="60">
+            <div class="focus-icon"><i class="bi bi-people" aria-hidden="true"></i></div>
+            <h4>Clear User Experience</h4>
+            <p>Users should never be confused. Navigation, actions and information structure should be obvious from the first glance.</p>
+          </div>
+          <div class="focus-card" data-aos="fade-up" data-aos-delay="120">
+            <div class="focus-icon"><i class="bi bi-braces-asterisk" aria-hidden="true"></i></div>
+            <h4>Modern Technology</h4>
+            <p>Built with current, maintainable technologies. No outdated dependencies, no legacy code unnecessarily carried forward.</p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- ===== EXPERIENCE SECTION ===== -->
-    <section id="experience" class="section experience-section">
+    <!-- ═══════════════ CONTACT ═══════════════ -->
+    <section id="contact" class="section contact-section alt-bg">
       <div class="container">
         <div class="section-header" data-aos="fade-up">
-          <div class="section-label">Background</div>
-          <h2 class="section-heading">Experience &amp; <span class="gradient-text">Credentials</span></h2>
+          <div class="section-label">Get In Touch</div>
+          <h2 class="section-heading">Have a Business That Needs<br><span class="gradient-text">a Better Website?</span></h2>
+          <p class="section-sub">Tell me what you're building and let's explore what could be improved. I'll respond within 24 hours.</p>
         </div>
 
-        <div class="exp-grid">
-          <div class="exp-col" data-aos="fade-right">
-            <h3 class="exp-col-title"><i class="bi bi-briefcase"></i> Work Experience</h3>
-            <div class="timeline">
-              <div class="timeline-item current">
-                <div class="tl-dot"></div>
-                <div class="tl-content">
-                  <div class="tl-period">Jan 2025 – Present <span class="tl-badge">Current</span></div>
-                  <h4 class="tl-role">Associate Software Developer</h4>
-                  <p class="tl-company">Futurism Technologies Pvt. Ltd., Pune</p>
-                  <ul class="tl-points">
-                    <li>Building scalable .NET web applications and REST APIs</li>
-                    <li>Developing React.js frontends for business applications</li>
-                    <li>Database design and optimization with SQL Server</li>
-                    <li>Deploying applications to Azure cloud</li>
-                  </ul>
-                  <div class="tl-tech">
-                    <span>ASP.NET</span><span>React.js</span><span>SQL Server</span><span>Azure</span>
-                  </div>
-                </div>
-              </div>
-              <div class="timeline-item">
-                <div class="tl-dot"></div>
-                <div class="tl-content">
-                  <div class="tl-period">Jul 2024 – Dec 2024</div>
-                  <h4 class="tl-role">.NET Developer Intern</h4>
-                  <p class="tl-company">Cravita Technologies Pvt. Ltd.</p>
-                  <ul class="tl-points">
-                    <li>Developed modules using ASP.NET Core MVC and C#</li>
-                    <li>Contributed to Staff Management and Admin Dashboard features</li>
-                  </ul>
-                  <div class="tl-tech">
-                    <span>ASP.NET MVC</span><span>C#</span><span>SQL Server</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
+        <div class="contact-layout">
 
-          <div class="exp-col" data-aos="fade-left" data-aos-delay="100">
-            <h3 class="exp-col-title"><i class="bi bi-patch-check"></i> Certifications</h3>
-            <div class="cert-cards">
-              <div class="cert-card">
-                <div class="cert-icon"><i class="bi bi-microsoft"></i></div>
-                <div class="cert-info">
-                  <h4>Microsoft Azure Fundamentals</h4>
-                  <p>Microsoft Certified</p>
-                </div>
-                <div class="cert-badge verified"><i class="bi bi-check-circle-fill"></i></div>
-              </div>
-              <div class="cert-card">
-                <div class="cert-icon"><i class="bi bi-code-slash"></i></div>
-                <div class="cert-info">
-                  <h4>.NET Development Course</h4>
-                  <p>Fortune Cloud Technologies</p>
-                </div>
-                <div class="cert-badge verified"><i class="bi bi-check-circle-fill"></i></div>
-              </div>
-            </div>
-
-            <h3 class="exp-col-title mt-5"><i class="bi bi-mortarboard"></i> Education</h3>
-            <div class="timeline">
-              <div class="timeline-item">
-                <div class="tl-dot"></div>
-                <div class="tl-content">
-                  <div class="tl-period">2021 – 2024</div>
-                  <h4 class="tl-role">Bachelor of Computer Applications (BCA)</h4>
-                  <p class="tl-company">Vishwalata College, Yeola, Nashik</p>
-                  <p class="tl-desc">CGPA: 7.54 · Savitribai Phule Pune University</p>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== TESTIMONIALS SECTION ===== -->
-    <section id="testimonials" class="section testimonials-section alt-bg">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <div class="section-label">Client Feedback</div>
-          <h2 class="section-heading">What Clients <span class="gradient-text">Say</span></h2>
-        </div>
-
-        <div class="testimonials-placeholder" data-aos="fade-up" data-aos-delay="100">
-          <div class="tp-icon"><i class="bi bi-chat-quote"></i></div>
-          <h3>Client Testimonials Coming Soon</h3>
-          <p>I'm currently collecting feedback from clients. Check back soon for real reviews.</p>
-          <a href="#contact" class="btn btn-primary"><i class="bi bi-chat-dots"></i> Be My Next Client</a>
-        </div>
-      </div>
-    </section>
-
-    <!-- ===== CONTACT SECTION ===== -->
-    <section id="contact" class="section contact-section">
-      <div class="container">
-        <div class="section-header" data-aos="fade-up">
-          <div class="section-label">Get Started</div>
-          <h2 class="section-heading">Let's Build Your <span class="gradient-text">Digital Solution</span></h2>
-          <p class="section-sub">Tell me about your project. I'll respond within 24 hours with ideas, timeline and a quote.</p>
-        </div>
-
-        <div class="contact-grid">
           <div class="contact-info-col" data-aos="fade-right">
-            <div class="contact-info-card">
-              <h3>Let's Talk Business</h3>
-              <p>Have a project in mind? Reach out through any channel — I'm ready to help you build it.</p>
+            <div class="contact-card">
+              <h3>Let's Talk About Your Project</h3>
+              <p>Whether you have a clear brief or just an idea — reach out. Free initial consultation.</p>
 
-              <div class="contact-quick-btns">
-                <a href="https://wa.me/917588174528?text=Hi%20Mahesh%2C%20I%20want%20to%20discuss%20a%20project" class="cqb whatsapp" target="_blank" rel="noopener">
-                  <i class="bi bi-whatsapp"></i>
-                  <div>
-                    <strong>WhatsApp</strong>
-                    <span>+91 7588174528</span>
-                  </div>
-                </a>
-                <a href="mailto:maheshjagzap03@gmail.com" class="cqb email">
-                  <i class="bi bi-envelope"></i>
-                  <div>
-                    <strong>Email</strong>
-                    <span>maheshjagzap03@gmail.com</span>
-                  </div>
-                </a>
-                <a href="tel:+917588174528" class="cqb call">
-                  <i class="bi bi-telephone"></i>
-                  <div>
-                    <strong>Call</strong>
-                    <span>+91 7588174528</span>
-                  </div>
-                </a>
-              </div>
-
+              <!-- Contact info placeholders — update with your preferred contact method -->
               <div class="contact-items">
                 <div class="contact-item">
-                  <div class="ci-icon"><i class="bi bi-geo-alt"></i></div>
-                  <div class="ci-text">
-                    <span class="ci-label">Location</span>
-                    <span class="ci-value">Maharashtra, India</span>
+                  <div class="ci-icon"><i class="bi bi-envelope" aria-hidden="true"></i></div>
+                  <div class="ci-info">
+                    <span class="ci-label">Email</span>
+                    <!-- Update with your preferred email address -->
+                    <span class="ci-value">Contact form below</span>
+                  </div>
+                </div>
+                <div class="contact-item">
+                  <div class="ci-icon"><i class="bi bi-phone" aria-hidden="true"></i></div>
+                  <div class="ci-info">
+                    <span class="ci-label">Phone / WhatsApp</span>
+                    <!-- Update with your preferred number when ready -->
+                    <span class="ci-value">Available on request</span>
                   </div>
                 </div>
               </div>
 
-              <div class="contact-socials">
-                <a href="https://www.linkedin.com/in/maheshjagzap/" target="_blank" rel="noopener" class="cs-link linkedin">
-                  <i class="bi bi-linkedin"></i><span>LinkedIn</span>
+              <div class="contact-social-links">
+                <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener noreferrer" class="csl-link github">
+                  <i class="bi bi-github" aria-hidden="true"></i><span>GitHub</span>
                 </a>
-                <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener" class="cs-link github">
-                  <i class="bi bi-github"></i><span>GitHub</span>
+                <a href="https://instagram.com/buildwithmahesh" target="_blank" rel="noopener noreferrer" class="csl-link instagram">
+                  <i class="bi bi-instagram" aria-hidden="true"></i><span>Instagram</span>
                 </a>
+                <!-- TODO: Add Instagram URL when confirmed -->
               </div>
             </div>
           </div>
 
           <div class="contact-form-col" data-aos="fade-left" data-aos-delay="100">
-            <form class="contact-form" id="contactForm" novalidate>
+            <form class="contact-form" id="contactForm" novalidate aria-label="Project inquiry form">
               <div class="form-row">
                 <div class="form-group">
-                  <label for="name">Your Name *</label>
-                  <input type="text" id="name" name="name" placeholder="Rajesh Kumar" required>
+                  <label for="name">Your Name <span aria-hidden="true">*</span></label>
+                  <input type="text" id="name" name="name" placeholder="Your name" required autocomplete="name">
                 </div>
                 <div class="form-group">
-                  <label for="business_name">Business Name</label>
-                  <input type="text" id="business_name" name="business_name" placeholder="My Business Pvt. Ltd.">
+                  <label for="business_name">Business / Brand</label>
+                  <input type="text" id="business_name" name="business_name" placeholder="Business name (optional)">
                 </div>
               </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="phone">Phone / WhatsApp *</label>
-                  <input type="tel" id="phone" name="phone" placeholder="+91 9876543210" required>
-                </div>
-                <div class="form-group">
-                  <label for="email">Email Address</label>
-                  <input type="email" id="email" name="email" placeholder="you@business.com">
-                </div>
+
+              <div class="form-group">
+                <label for="email">Email Address <span aria-hidden="true">*</span></label>
+                <input type="email" id="email" name="email" placeholder="your@email.com" required autocomplete="email">
               </div>
-              <div class="form-row">
-                <div class="form-group">
-                  <label for="project_type">Project Type</label>
-                  <select id="project_type" name="project_type">
-                    <option value="">Select what you need</option>
-                    <option value="business-website">Business Website</option>
-                    <option value="hotel-restaurant">Hotel / Restaurant Website</option>
-                    <option value="ecommerce">Ecommerce Website</option>
-                    <option value="business-software">Custom Business Software</option>
-                    <option value="dashboard">Dashboard / Admin Panel</option>
-                    <option value="api">Web API / Integration</option>
-                    <option value="maintenance">Maintenance &amp; Support</option>
-                    <option value="other">Other / Not Sure</option>
-                  </select>
-                </div>
-                <div class="form-group">
-                  <label for="budget">Budget Range</label>
-                  <select id="budget" name="budget">
-                    <option value="">Select budget</option>
-                    <option value="<50k">Under ₹50,000</option>
-                    <option value="50k-1l">₹50,000 – ₹1,00,000</option>
-                    <option value="1l-3l">₹1,00,000 – ₹3,00,000</option>
-                    <option value="3l+">₹3,00,000+</option>
-                    <option value="discuss">Let's Discuss</option>
-                  </select>
-                </div>
+
+              <div class="form-group">
+                <label for="project_type">What Do You Need?</label>
+                <select id="project_type" name="project_type">
+                  <option value="">Select a service</option>
+                  <option value="website-design">Website Design</option>
+                  <option value="website-development">Website Development</option>
+                  <option value="landing-page">Landing Page</option>
+                  <option value="redesign">Website Redesign</option>
+                  <option value="uiux">UI/UX Design</option>
+                  <option value="digital-presence">Digital Business Presence</option>
+                  <option value="other">Other / Not Sure Yet</option>
+                </select>
               </div>
-              <div class="form-group full">
-                <label for="message">Project Description *</label>
-                <textarea id="message" name="message" rows="5" placeholder="Describe your business and what you want to build. The more details, the better I can help..." required></textarea>
+
+              <div class="form-group">
+                <label for="message">Tell Me About Your Project <span aria-hidden="true">*</span></label>
+                <textarea id="message" name="message" rows="5"
+                  placeholder="Describe your business and what you want to build. The more detail, the better I can help..."
+                  required></textarea>
               </div>
-              <div class="form-status">
-                <div class="fs-loading" id="formLoading"><i class="bi bi-hourglass-split"></i> Sending your message...</div>
-                <div class="fs-success" id="formSuccess"><i class="bi bi-check-circle-fill"></i> Message sent! I'll reply within 24 hours.</div>
-                <div class="fs-error" id="formError"><i class="bi bi-exclamation-triangle-fill"></i> Something went wrong. Please try again.</div>
+
+              <div class="form-status" aria-live="polite">
+                <div class="fs-loading" id="formLoading"><i class="bi bi-hourglass-split" aria-hidden="true"></i> Sending your message...</div>
+                <div class="fs-success" id="formSuccess"><i class="bi bi-check-circle-fill" aria-hidden="true"></i> Message sent! I'll reply within 24 hours.</div>
+                <div class="fs-error"   id="formError"><i class="bi bi-exclamation-triangle-fill" aria-hidden="true"></i> Something went wrong. Please try again.</div>
               </div>
-              <div class="form-submit-row">
-                <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
-                  <i class="bi bi-send"></i> Send Project Inquiry
-                </button>
-                <a href="https://wa.me/917588174528?text=Hi%20Mahesh%2C%20I%20want%20to%20discuss%20a%20project" class="btn btn-whatsapp btn-full" target="_blank" rel="noopener">
-                  <i class="bi bi-whatsapp"></i> Or Chat on WhatsApp
-                </a>
-              </div>
+
+              <button type="submit" class="btn btn-primary btn-full" id="submitBtn">
+                <i class="bi bi-send" aria-hidden="true"></i> Send Message
+              </button>
             </form>
           </div>
+
         </div>
       </div>
     </section>
 
   </main>
 
-  <!-- ===== FOOTER ===== -->
+  <!-- ═══════════════ FOOTER ═══════════════ -->
   <footer id="footer">
     <div class="container">
-      <div class="footer-grid">
-        <div class="footer-brand">
-          <span class="logo-text">Mahesh jagzap<span class="logo-dot">.</span></span>
-          <p>Custom websites, ecommerce platforms, dashboards &amp; business software for hotels, restaurants, shops and startups across India.</p>
+      <div class="footer-layout">
+
+        <div class="footer-brand-col">
+          <a href="#hero" class="footer-logo" aria-label="MAHESH BUILDS">
+            MAHESH BUILDS<span class="footer-apple"> </span>
+          </a>
+          <p class="footer-tagline">Build. Create. Improve.</p>
           <div class="footer-socials">
-            <a href="https://www.linkedin.com/in/maheshjagzap/" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="bi bi-linkedin"></i></a>
-            <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener" aria-label="GitHub"><i class="bi bi-github"></i></a>
-            <a href="mailto:maheshjagzap03@gmail.com" aria-label="Email"><i class="bi bi-envelope"></i></a>
-            <a href="https://wa.me/917588174528" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
+            <a href="https://github.com/maheshjagzap" target="_blank" rel="noopener noreferrer" aria-label="GitHub" class="footer-social-link">
+              <i class="bi bi-github" aria-hidden="true"></i>
+            </a>
+            <a href="https://instagram.com/buildwithmahesh" target="_blank" rel="noopener noreferrer" aria-label="Instagram" class="footer-social-link">
+              <i class="bi bi-instagram" aria-hidden="true"></i>
+            </a>
+            <!-- TODO: Update Instagram URL when confirmed -->
           </div>
         </div>
 
-        <div class="footer-links">
+        <div class="footer-links-col">
+          <h4>Work</h4>
+          <ul>
+            <li><a href="#work">Selected Work</a></li>
+            <li><a href="#work">Demos</a></li>
+            <li><a href="https://github.com/maheshjagzap" target="_blank" rel="noopener noreferrer">GitHub</a></li>
+          </ul>
+        </div>
+
+        <div class="footer-links-col">
           <h4>Services</h4>
           <ul>
-            <li><a href="#services">Business Websites</a></li>
-            <li><a href="#services">Hotel &amp; Restaurant Websites</a></li>
-            <li><a href="#services">Ecommerce Development</a></li>
-            <li><a href="#services">Custom Business Software</a></li>
-            <li><a href="#services">Web APIs &amp; Integrations</a></li>
+            <li><a href="#services">Website Design</a></li>
+            <li><a href="#services">Website Development</a></li>
+            <li><a href="#services">Landing Pages</a></li>
+            <li><a href="#services">Website Redesign</a></li>
           </ul>
         </div>
 
-        <div class="footer-links">
-          <h4>Industries</h4>
+        <div class="footer-links-col">
+          <h4>Connect</h4>
           <ul>
-            <li><a href="#industries">Hotels &amp; Resorts</a></li>
-            <li><a href="#industries">Restaurants</a></li>
-            <li><a href="#industries">Retail &amp; Ecommerce</a></li>
-            <li><a href="#industries">Manufacturers</a></li>
-            <li><a href="#industries">Startups</a></li>
+            <li><a href="#contact">Start a Project</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="https://instagram.com/buildwithmahesh" target="_blank" rel="noopener noreferrer">Instagram</a></li>
           </ul>
         </div>
 
-        <div class="footer-contact">
-          <h4>Start Your Project</h4>
-          <p>Free consultation for all new projects. Let's discuss your idea.</p>
-          <a href="https://wa.me/917588174528?text=Hi%20Mahesh%2C%20I%20want%20to%20discuss%20a%20project" class="btn btn-whatsapp btn-sm" target="_blank" rel="noopener"><i class="bi bi-whatsapp"></i> WhatsApp Now</a>
-          <a href="#contact" class="btn btn-ghost btn-sm" style="margin-top:10px"><i class="bi bi-envelope"></i> Send Inquiry</a>
-        </div>
       </div>
 
       <div class="footer-bottom">
-        <p>&copy; 2026 Mahesh Jagzap. All Rights Reserved.</p>
-        <p>Custom Web Development · Maharashtra, India</p>
+        <p>&copy; 2026 MAHESH BUILDS. All Rights Reserved.</p>
+        <p>Digital Experiences &amp; Web Development</p>
       </div>
     </div>
   </footer>
 
-  <!-- Floating WhatsApp Button -->
-  <a href="https://wa.me/917588174528?text=Hi%20Mahesh%2C%20I%20want%20to%20discuss%20a%20project" class="floating-whatsapp" target="_blank" rel="noopener" aria-label="Chat on WhatsApp">
-    <i class="bi bi-whatsapp"></i>
-    <span class="fwa-tooltip">Chat on WhatsApp</span>
-  </a>
-
-  <!-- Scroll to top -->
+  <!-- Scroll to Top -->
   <a href="#hero" class="scroll-top" id="scrollTop" aria-label="Scroll to top">
-    <i class="bi bi-arrow-up"></i>
+    <i class="bi bi-arrow-up" aria-hidden="true"></i>
   </a>
 
+  <!-- AOS -->
   <script src="assets/vendor/aos/aos.js"></script>
+  <!-- EmailJS -->
   <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <!-- Main JS -->
   <script src="assets/js/main.js"></script>
 
 </body>

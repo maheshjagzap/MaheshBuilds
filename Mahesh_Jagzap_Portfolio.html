@@ -1,0 +1,573 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mahesh Jagzap – Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { font-family: 'Segoe UI', Arial, sans-serif; color: #1a1a2e; background: #fff; font-size: 13px; line-height: 1.5; }
+
+    /* ---- Print/PDF page setup ---- */
+    @page { size: A4; margin: 15mm 12mm; }
+    @media print {
+      .no-print { display: none !important; }
+      body { font-size: 11px; }
+      section { page-break-inside: avoid; }
+    }
+
+    /* ---- Print button ---- */
+    .print-btn {
+      position: fixed; top: 20px; right: 20px; z-index: 999;
+      background: #4f46e5; color: #fff; border: none;
+      padding: 10px 22px; border-radius: 8px; font-size: 14px;
+      cursor: pointer; font-weight: 600; box-shadow: 0 4px 14px rgba(79,70,229,.4);
+    }
+    .print-btn:hover { background: #4338ca; }
+
+    /* ---- Layout ---- */
+    .page { max-width: 800px; margin: 0 auto; padding: 30px 30px 20px; }
+
+    /* ---- Header ---- */
+    .header { background: linear-gradient(135deg, #0f0c29, #302b63, #24243e);
+      color: #fff; padding: 36px 32px; border-radius: 12px; margin-bottom: 24px; }
+    .header-top { display: flex; justify-content: space-between; align-items: flex-start; }
+    .name { font-size: 32px; font-weight: 800; letter-spacing: -0.5px; }
+    .name span { color: #a78bfa; }
+    .tagline { font-size: 14px; color: #c4b5fd; margin-top: 4px; font-weight: 500; }
+    .badge { display: inline-block; background: rgba(167,139,250,.25); color: #c4b5fd;
+      border: 1px solid rgba(167,139,250,.4); padding: 4px 12px; border-radius: 20px;
+      font-size: 11px; margin-top: 8px; }
+    .contact-pills { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 18px; }
+    .cpill { background: rgba(255,255,255,.1); border: 1px solid rgba(255,255,255,.2);
+      color: #e2e8f0; padding: 5px 13px; border-radius: 20px; font-size: 11.5px; }
+    .stats-row { display: flex; gap: 24px; margin-top: 20px; }
+    .stat { text-align: center; }
+    .stat-num { font-size: 22px; font-weight: 800; color: #a78bfa; display: block; }
+    .stat-lbl { font-size: 10px; color: #94a3b8; text-transform: uppercase; letter-spacing: .5px; }
+
+    /* ---- Section ---- */
+    section { margin-bottom: 22px; }
+    .sec-title { font-size: 15px; font-weight: 700; color: #4f46e5;
+      border-bottom: 2px solid #e0e7ff; padding-bottom: 6px; margin-bottom: 14px;
+      text-transform: uppercase; letter-spacing: .6px; }
+    .sec-label { font-size: 10px; color: #6366f1; font-weight: 600;
+      text-transform: uppercase; letter-spacing: 1px; margin-bottom: 4px; }
+
+    /* ---- Services ---- */
+    .services-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .svc-card { border: 1px solid #e0e7ff; border-radius: 10px; padding: 14px;
+      background: #f8f7ff; position: relative; }
+    .svc-card.featured { border-color: #4f46e5; background: #eef2ff; }
+    .svc-name { font-size: 12.5px; font-weight: 700; color: #1e1b4b; margin-bottom: 5px; }
+    .svc-desc { font-size: 11px; color: #4b5563; margin-bottom: 8px; }
+    .svc-features { list-style: none; }
+    .svc-features li { font-size: 11px; color: #374151; padding: 2px 0; }
+    .svc-features li::before { content: "✓ "; color: #4f46e5; font-weight: 700; }
+    .pop-badge { position: absolute; top: -8px; right: 10px; background: #4f46e5;
+      color: #fff; font-size: 9px; padding: 2px 8px; border-radius: 10px; font-weight: 700; }
+
+    /* ---- Industries ---- */
+    .ind-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .ind-card { background: #f0f4ff; border: 1px solid #dde5ff; border-radius: 8px;
+      padding: 10px 12px; }
+    .ind-name { font-size: 12px; font-weight: 700; color: #1e1b4b; margin-bottom: 3px; }
+    .ind-desc { font-size: 10.5px; color: #6b7280; }
+
+    /* ---- Projects ---- */
+    .featured-proj { border: 2px solid #4f46e5; border-radius: 12px; padding: 18px;
+      background: #f5f3ff; margin-bottom: 14px; }
+    .proj-header { display: flex; justify-content: space-between; align-items: flex-start; margin-bottom: 10px; }
+    .proj-title { font-size: 18px; font-weight: 800; color: #1e1b4b; }
+    .proj-tagline { font-size: 12px; color: #4f46e5; font-weight: 600; margin-top: 2px; }
+    .proj-badges { display: flex; gap: 6px; flex-wrap: wrap; }
+    .badge-chip { padding: 3px 10px; border-radius: 12px; font-size: 10px; font-weight: 700; }
+    .bc-react { background: #dbeafe; color: #1d4ed8; }
+    .bc-dotnet { background: #ede9fe; color: #5b21b6; }
+    .bc-sql { background: #fef3c7; color: #92400e; }
+    .bc-azure { background: #e0f2fe; color: #0369a1; }
+    .bc-cs { background: #fce7f3; color: #9d174d; }
+    .prob-sol { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin: 10px 0; }
+    .ps-block { background: #fff; border-radius: 8px; padding: 10px; border: 1px solid #e0e7ff; }
+    .ps-label { font-size: 10px; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; }
+    .ps-label.problem { color: #dc2626; }
+    .ps-label.solution { color: #16a34a; }
+    .ps-text { font-size: 11px; color: #374151; }
+    .feat-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 6px; margin-top: 10px; }
+    .feat-item { background: #eef2ff; border-radius: 6px; padding: 5px 8px;
+      font-size: 10.5px; color: #3730a3; font-weight: 500; text-align: center; }
+    .impact-bar { background: #dcfce7; border: 1px solid #bbf7d0; border-radius: 8px;
+      padding: 8px 12px; margin-top: 10px; font-size: 11px; color: #166534; }
+
+    /* ---- Project cards ---- */
+    .proj-cards { display: grid; grid-template-columns: repeat(3, 1fr); gap: 12px; }
+    .pc { border: 1px solid #e0e7ff; border-radius: 10px; padding: 14px; background: #fff; }
+    .pc-title { font-size: 13px; font-weight: 700; color: #1e1b4b; margin-bottom: 4px; }
+    .pc-cat { font-size: 10px; color: #6366f1; font-weight: 600; margin-bottom: 6px; }
+    .pc-desc { font-size: 11px; color: #374151; margin-bottom: 8px; }
+    .pc-feats { display: flex; flex-wrap: wrap; gap: 4px; margin-bottom: 8px; }
+    .pc-feat { background: #f0f4ff; color: #3730a3; font-size: 10px; padding: 2px 8px; border-radius: 10px; }
+    .pc-stack { display: flex; flex-wrap: wrap; gap: 4px; }
+
+    /* ---- Why choose ---- */
+    .why-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .why-card { background: #f8f7ff; border: 1px solid #e0e7ff; border-radius: 8px; padding: 12px; }
+    .why-title { font-size: 12px; font-weight: 700; color: #1e1b4b; margin-bottom: 4px; }
+    .why-text { font-size: 11px; color: #4b5563; }
+
+    /* ---- Process ---- */
+    .process-steps { display: grid; grid-template-columns: repeat(4, 1fr); gap: 10px; }
+    .proc-step { background: #eef2ff; border: 1px solid #c7d2fe; border-radius: 8px; padding: 12px; text-align: center; }
+    .proc-num { font-size: 20px; font-weight: 800; color: #4f46e5; display: block; }
+    .proc-title { font-size: 11.5px; font-weight: 700; color: #1e1b4b; margin: 4px 0; }
+    .proc-desc { font-size: 10px; color: #4b5563; }
+    .process-steps2 { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; margin-top: 10px; }
+
+    /* ---- Tech Stack ---- */
+    .tech-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 12px; }
+    .tech-cat { background: #f8f7ff; border: 1px solid #e0e7ff; border-radius: 8px; padding: 12px; }
+    .tech-name { font-size: 12px; font-weight: 700; color: #1e1b4b; margin-bottom: 8px; }
+    .tech-pills { display: flex; flex-wrap: wrap; gap: 5px; }
+    .tp { background: #eef2ff; color: #3730a3; font-size: 10.5px; padding: 3px 10px; border-radius: 12px; font-weight: 500; }
+
+    /* ---- About / Experience ---- */
+    .about-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .about-text { font-size: 12px; color: #374151; margin-bottom: 8px; line-height: 1.6; }
+    .info-chips { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 8px; }
+    .ic { background: #eef2ff; border: 1px solid #c7d2fe; color: #3730a3; font-size: 11px; padding: 4px 10px; border-radius: 12px; }
+    .timeline-item { margin-bottom: 14px; padding-left: 16px; border-left: 3px solid #4f46e5; }
+    .tl-period { font-size: 10px; color: #6366f1; font-weight: 700; text-transform: uppercase; margin-bottom: 2px; }
+    .tl-role { font-size: 13px; font-weight: 700; color: #1e1b4b; margin-bottom: 2px; }
+    .tl-company { font-size: 11.5px; color: #4b5563; margin-bottom: 4px; }
+    .tl-points { font-size: 11px; color: #374151; padding-left: 14px; margin-bottom: 5px; }
+    .tl-points li { margin-bottom: 2px; }
+    .tl-tech { display: flex; flex-wrap: wrap; gap: 4px; }
+    .tl-chip { background: #ede9fe; color: #5b21b6; font-size: 10px; padding: 2px 8px; border-radius: 10px; }
+    .tl-badge { background: #dcfce7; color: #166534; font-size: 9px; padding: 1px 7px; border-radius: 10px; font-weight: 700; }
+
+    /* ---- Cert cards ---- */
+    .cert-cards { display: grid; grid-template-columns: 1fr 1fr; gap: 10px; margin-bottom: 14px; }
+    .cert-card { background: #f8f7ff; border: 1px solid #e0e7ff; border-radius: 8px; padding: 10px 12px; display: flex; align-items: center; gap: 10px; }
+    .cert-title { font-size: 11.5px; font-weight: 700; color: #1e1b4b; }
+    .cert-issuer { font-size: 10px; color: #6b7280; }
+    .cert-icon-big { font-size: 22px; }
+
+    /* ---- Contact ---- */
+    .contact-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 10px; }
+    .contact-item { background: #eef2ff; border: 1px solid #c7d2fe; border-radius: 8px; padding: 12px; text-align: center; }
+    .contact-label { font-size: 10px; color: #6366f1; font-weight: 700; text-transform: uppercase; margin-bottom: 4px; }
+    .contact-value { font-size: 12px; font-weight: 600; color: #1e1b4b; }
+    .footer-note { text-align: center; margin-top: 24px; padding: 12px; background: #f5f3ff;
+      border-radius: 8px; font-size: 11px; color: #4b5563; border: 1px solid #e0e7ff; }
+  </style>
+</head>
+<body>
+<button class="print-btn no-print" onclick="window.print()">🖨️ Save as PDF</button>
+<div class="page">
+
+  <!-- HEADER -->
+  <div class="header">
+    <div class="header-top">
+      <div>
+        <div class="name">Mahesh Jagzap<span>.</span></div>
+        <div class="tagline">Full Stack Developer · Custom Websites &amp; Business Software</div>
+        <div class="badge">🟢 Available for New Projects</div>
+      </div>
+      <div style="text-align:right;">
+        <div style="font-size:11px;color:#94a3b8;">Associate Software Developer</div>
+        <div style="font-size:12px;color:#c4b5fd;font-weight:600;margin-top:2px;">Futurism Technologies Pvt. Ltd., Pune</div>
+        <div style="font-size:11px;color:#94a3b8;margin-top:4px;">Maharashtra, India</div>
+      </div>
+    </div>
+    <div class="contact-pills">
+      <span class="cpill">📞 +91 7588174528</span>
+      <span class="cpill">✉️ maheshjagzap03@gmail.com</span>
+      <span class="cpill">💼 linkedin.com/in/maheshjagzap</span>
+      <span class="cpill">🐙 github.com/maheshjagzap</span>
+      <span class="cpill">📍 Maharashtra, India</span>
+    </div>
+    <div class="stats-row">
+      <div class="stat"><span class="stat-num">4+</span><span class="stat-lbl">Years Experience</span></div>
+      <div class="stat"><span class="stat-num">10+</span><span class="stat-lbl">Projects Delivered</span></div>
+      <div class="stat"><span class="stat-num">9+</span><span class="stat-lbl">Industries Served</span></div>
+      <div class="stat"><span class="stat-num">100%</span><span class="stat-lbl">Custom Code</span></div>
+    </div>
+  </div>
+
+  <!-- ABOUT -->
+  <section>
+    <div class="sec-label">About</div>
+    <div class="sec-title">About Me</div>
+    <p class="about-text">I'm Mahesh Jagzap — a full stack developer from Maharashtra, India who builds custom websites and business software for hotels, restaurants, shops, manufacturers and startups. Coming from an agricultural background, I understand the real challenges businesses face. I don't just write code — I build digital solutions that solve actual problems, improve operations and help businesses grow revenue.</p>
+    <p class="about-text">Currently working as Associate Software Developer at <strong>Futurism Technologies Pvt. Ltd.</strong> in Pune, I specialize in ASP.NET Web API, React.js, SQL Server and Azure cloud deployments.</p>
+    <div class="info-chips">
+      <span class="ic">📍 Maharashtra, India</span>
+      <span class="ic">☁️ Azure Certified</span>
+      <span class="ic">✅ Available for Freelance Projects</span>
+      <span class="ic">🎓 BCA – SPPU (CGPA 7.54)</span>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section>
+    <div class="sec-label">What I Build</div>
+    <div class="sec-title">Services</div>
+    <div class="services-grid">
+      <div class="svc-card">
+        <div class="svc-name">🌐 Business Websites</div>
+        <div class="svc-desc">Professional, fast-loading websites that bring in customers 24/7.</div>
+        <ul class="svc-features">
+          <li>Mobile Responsive</li><li>Modern Design</li><li>SEO Friendly</li>
+          <li>Contact Forms</li><li>WhatsApp Integration</li>
+        </ul>
+      </div>
+      <div class="svc-card featured">
+        <div class="pop-badge">Most Popular</div>
+        <div class="svc-name">🏨 Hotel &amp; Restaurant Websites</div>
+        <div class="svc-desc">Specialized websites for hospitality businesses with booking management.</div>
+        <ul class="svc-features">
+          <li>Booking Forms</li><li>Menu Display</li><li>Photo Gallery</li>
+          <li>Inquiry Management</li><li>Location &amp; Map</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="svc-name">🛒 Ecommerce Websites</div>
+        <div class="svc-desc">Full-featured online stores with payment integration and admin dashboard.</div>
+        <ul class="svc-features">
+          <li>Product Catalog</li><li>Payment Integration</li><li>Order Management</li>
+          <li>Admin Dashboard</li><li>Inventory Tracking</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="svc-name">⚙️ Custom Business Software</div>
+        <div class="svc-desc">Automate operations with custom-built management systems.</div>
+        <ul class="svc-features">
+          <li>Inventory Management</li><li>Employee Management</li><li>CRM Systems</li>
+          <li>Billing Systems</li><li>Reporting Dashboards</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="svc-name">🔌 Web APIs &amp; Integrations</div>
+        <div class="svc-desc">Connect systems with third-party services and payment gateways.</div>
+        <ul class="svc-features">
+          <li>REST APIs</li><li>Third-Party Integrations</li><li>Payment Gateway</li>
+          <li>Authentication Systems</li><li>Cloud Deployment</li>
+        </ul>
+      </div>
+      <div class="svc-card">
+        <div class="svc-name">🛠️ Maintenance &amp; Support</div>
+        <div class="svc-desc">Post-launch support — bug fixes, performance tuning and new features.</div>
+        <ul class="svc-features">
+          <li>Bug Fixes</li><li>Performance Optimization</li><li>Hosting Support</li>
+          <li>Security Updates</li><li>Feature Additions</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- INDUSTRIES -->
+  <section>
+    <div class="sec-label">Who I Work With</div>
+    <div class="sec-title">Industries I Serve</div>
+    <div class="ind-grid">
+      <div class="ind-card"><div class="ind-name">🏨 Hotels &amp; Resorts</div><div class="ind-desc">Booking websites, room management, inquiry systems</div></div>
+      <div class="ind-card"><div class="ind-name">☕ Restaurants</div><div class="ind-desc">Menu websites, table booking, online ordering</div></div>
+      <div class="ind-card"><div class="ind-name">🛍️ Retail Shops</div><div class="ind-desc">Online stores, product catalogs, payment integration</div></div>
+      <div class="ind-card"><div class="ind-name">🏭 Manufacturers</div><div class="ind-desc">Inventory systems, production tracking, B2B portals</div></div>
+      <div class="ind-card"><div class="ind-name">🛒 Ecommerce Businesses</div><div class="ind-desc">Full-featured stores, marketplace platforms, catalogs</div></div>
+      <div class="ind-card"><div class="ind-name">🌾 Agriculture Businesses</div><div class="ind-desc">Farmer marketplaces, supply chain, buyer connections</div></div>
+      <div class="ind-card"><div class="ind-name">🚀 Startups</div><div class="ind-desc">MVPs, SaaS platforms, rapid development</div></div>
+      <div class="ind-card"><div class="ind-name">🎓 Educational Institutes</div><div class="ind-desc">Student portals, admission systems, LMS platforms</div></div>
+      <div class="ind-card"><div class="ind-name">💼 Service Providers</div><div class="ind-desc">Booking systems, CRM, client management portals</div></div>
+    </div>
+  </section>
+
+  <!-- PROJECTS -->
+  <section>
+    <div class="sec-label">Our Work</div>
+    <div class="sec-title">Projects &amp; Case Studies</div>
+
+    <!-- Featured Project -->
+    <div class="featured-proj">
+      <div class="proj-header">
+        <div>
+          <div class="proj-title">⭐ Majhi Paithani</div>
+          <div class="proj-tagline">A Digital Marketplace Connecting Paithani Artisans Directly with Customers</div>
+        </div>
+        <div class="proj-badges">
+          <span class="badge-chip bc-react">React.js</span>
+          <span class="badge-chip bc-dotnet">ASP.NET Web API</span>
+          <span class="badge-chip bc-cs">C#</span>
+          <span class="badge-chip bc-sql">SQL Server</span>
+          <span class="badge-chip bc-azure">Azure</span>
+        </div>
+      </div>
+      <div class="prob-sol">
+        <div class="ps-block">
+          <div class="ps-label problem">⚠️ Business Problem</div>
+          <div class="ps-text">Traditional Paithani artisans rely on WhatsApp &amp; social media for sales — no dedicated platform, no order system, no way to scale their business.</div>
+        </div>
+        <div class="ps-block">
+          <div class="ps-label solution">✅ Solution Delivered</div>
+          <div class="ps-text">A dedicated marketplace where artisans register, manage products, receive orders and handle custom saree requests — all from one platform.</div>
+        </div>
+      </div>
+      <div style="font-size:11px;font-weight:700;color:#3730a3;margin-top:10px;margin-bottom:6px;">Features Delivered</div>
+      <div class="feat-grid">
+        <div class="feat-item">Artisan Registration</div>
+        <div class="feat-item">Saree Catalog</div>
+        <div class="feat-item">Order Management</div>
+        <div class="feat-item">Custom Saree Requests</div>
+        <div class="feat-item">Seller Dashboard</div>
+        <div class="feat-item">Admin Panel</div>
+        <div class="feat-item">Location Discovery</div>
+        <div class="feat-item">Multiple Payments</div>
+        <div class="feat-item">Delivery Tracking</div>
+        <div class="feat-item">Customer Inquiries</div>
+        <div class="feat-item">Customer Dashboard</div>
+        <div class="feat-item">Sales Analytics</div>
+      </div>
+      <div class="impact-bar">📈 <strong>Business Impact:</strong> Artisans can now reach customers across India without depending on middlemen or social media.</div>
+    </div>
+
+    <!-- Other Projects -->
+    <div class="proj-cards">
+      <div class="pc">
+        <div class="pc-cat">🌾 Agriculture · Marketplace</div>
+        <div class="pc-title">Farmer Mitra</div>
+        <div class="pc-desc">Platform connecting farmers directly with buyers, removing middlemen and increasing farmer income.</div>
+        <div class="pc-feats">
+          <span class="pc-feat">Farmer Registration</span>
+          <span class="pc-feat">Product Listings</span>
+          <span class="pc-feat">Market Connectivity</span>
+          <span class="pc-feat">Profile Management</span>
+        </div>
+        <div class="pc-stack">
+          <span class="badge-chip bc-react">React.js</span>
+          <span class="badge-chip bc-dotnet">ASP.NET</span>
+          <span class="badge-chip bc-sql">SQL Server</span>
+        </div>
+      </div>
+      <div class="pc">
+        <div class="pc-cat">🥛 Dairy · Business Software</div>
+        <div class="pc-title">Milk Management System</div>
+        <div class="pc-desc">Automates dairy operations and connects businesses directly with buyers, eliminating middlemen.</div>
+        <div class="pc-feats">
+          <span class="pc-feat">Milk Collection Tracking</span>
+          <span class="pc-feat">Rate Management</span>
+          <span class="pc-feat">Direct Buyer Connect</span>
+          <span class="pc-feat">Reports &amp; Analytics</span>
+        </div>
+        <div class="pc-stack">
+          <span class="badge-chip bc-react">React.js</span>
+          <span class="badge-chip bc-dotnet">ASP.NET</span>
+          <span class="badge-chip bc-sql">SQL Server</span>
+        </div>
+      </div>
+      <div class="pc">
+        <div class="pc-cat">📋 Business Software · HR</div>
+        <div class="pc-title">Staff Task Management</div>
+        <div class="pc-desc">Gives business owners full visibility into staff tasks with accountability and reporting dashboard.</div>
+        <div class="pc-feats">
+          <span class="pc-feat">Employee Management</span>
+          <span class="pc-feat">Task Assignment</span>
+          <span class="pc-feat">Progress Tracking</span>
+          <span class="pc-feat">Reporting Dashboard</span>
+        </div>
+        <div class="pc-stack">
+          <span class="badge-chip bc-dotnet">ASP.NET</span>
+          <span class="badge-chip bc-sql">SQL Server</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CHOOSE ME -->
+  <section>
+    <div class="sec-label">Why Work With Me</div>
+    <div class="sec-title">Why Businesses Choose Me</div>
+    <div class="why-grid">
+      <div class="why-card">
+        <div class="why-title">💻 Custom Development</div>
+        <div class="why-text">No generic templates. Every project is built from scratch for your specific requirements.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-title">🤝 Direct Communication</div>
+        <div class="why-text">You work directly with me — no middlemen. Fast responses and clear updates always.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-title">💰 Affordable Solutions</div>
+        <div class="why-text">Enterprise-quality software designed for budgets of startups and small businesses in India.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-title">📈 Scalable Architecture</div>
+        <div class="why-text">Your software is built to grow with your business — add features anytime without rebuilding.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-title">🎧 Support After Launch</div>
+        <div class="why-text">I remain available after deployment for bug fixes, updates and new feature development.</div>
+      </div>
+      <div class="why-card">
+        <div class="why-title">🔐 Secure &amp; Reliable</div>
+        <div class="why-text">Built with security best practices — your business data is always protected.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WORK PROCESS -->
+  <section>
+    <div class="sec-label">How It Works</div>
+    <div class="sec-title">My Work Process</div>
+    <div class="process-steps">
+      <div class="proc-step"><span class="proc-num">01</span><div class="proc-title">💬 Discussion</div><div class="proc-desc">We talk about your goals. Free consultation via WhatsApp or call.</div></div>
+      <div class="proc-step"><span class="proc-num">02</span><div class="proc-title">📄 Requirements</div><div class="proc-desc">I document all features, pages, integrations and technical needs.</div></div>
+      <div class="proc-step"><span class="proc-num">03</span><div class="proc-title">📐 Planning</div><div class="proc-desc">Project plan with timeline, milestones, tech stack and budget.</div></div>
+      <div class="proc-step"><span class="proc-num">04</span><div class="proc-title">⌨️ Development</div><div class="proc-desc">Regular updates and progress demos throughout the build.</div></div>
+    </div>
+    <div class="process-steps2">
+      <div class="proc-step"><span class="proc-num">05</span><div class="proc-title">🧪 Testing</div><div class="proc-desc">Thorough testing across devices and browsers before going live.</div></div>
+      <div class="proc-step"><span class="proc-num">06</span><div class="proc-title">🚀 Deployment</div><div class="proc-desc">Goes live on your domain with SSL and performance optimization.</div></div>
+      <div class="proc-step"><span class="proc-num">07</span><div class="proc-title">🎧 Support</div><div class="proc-desc">Ongoing support, maintenance and feature additions as you grow.</div></div>
+    </div>
+  </section>
+
+  <!-- TECH STACK -->
+  <section>
+    <div class="sec-label">Technology</div>
+    <div class="sec-title">Tech Stack I Use</div>
+    <div class="tech-grid">
+      <div class="tech-cat">
+        <div class="tech-name">⚙️ Backend</div>
+        <div class="tech-pills">
+          <span class="tp">ASP.NET Core</span><span class="tp">C#</span><span class="tp">Entity Framework</span>
+          <span class="tp">SQL Server</span><span class="tp">REST APIs</span><span class="tp">JWT Auth</span>
+        </div>
+      </div>
+      <div class="tech-cat">
+        <div class="tech-name">🖥️ Frontend</div>
+        <div class="tech-pills">
+          <span class="tp">React.js</span><span class="tp">JavaScript</span><span class="tp">HTML5</span>
+          <span class="tp">CSS3</span><span class="tp">Bootstrap</span><span class="tp">Responsive Design</span>
+        </div>
+      </div>
+      <div class="tech-cat">
+        <div class="tech-name">☁️ Cloud &amp; Hosting</div>
+        <div class="tech-pills">
+          <span class="tp">Microsoft Azure</span><span class="tp">Azure App Services</span>
+          <span class="tp">IIS Hosting</span><span class="tp">SSL &amp; Security</span>
+        </div>
+      </div>
+      <div class="tech-cat">
+        <div class="tech-name">🛠️ Tools</div>
+        <div class="tech-pills">
+          <span class="tp">Git &amp; GitHub</span><span class="tp">Visual Studio</span>
+          <span class="tp">Swagger</span><span class="tp">Postman</span><span class="tp">SSMS</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- EXPERIENCE & EDUCATION -->
+  <section>
+    <div class="sec-label">Background</div>
+    <div class="sec-title">Experience &amp; Credentials</div>
+    <div class="about-grid">
+      <div>
+        <h4 style="font-size:13px;color:#1e1b4b;margin-bottom:12px;">💼 Work Experience</h4>
+        <div class="timeline-item">
+          <div class="tl-period">Jan 2025 – Present <span class="tl-badge">Current</span></div>
+          <div class="tl-role">Associate Software Developer</div>
+          <div class="tl-company">Futurism Technologies Pvt. Ltd., Pune</div>
+          <ul class="tl-points">
+            <li>Building scalable .NET web applications and REST APIs</li>
+            <li>Developing React.js frontends for business applications</li>
+            <li>Database design and optimization with SQL Server</li>
+            <li>Deploying applications to Azure cloud</li>
+          </ul>
+          <div class="tl-tech">
+            <span class="tl-chip">ASP.NET</span><span class="tl-chip">React.js</span>
+            <span class="tl-chip">SQL Server</span><span class="tl-chip">Azure</span>
+          </div>
+        </div>
+        <div class="timeline-item">
+          <div class="tl-period">Jul 2024 – Dec 2024</div>
+          <div class="tl-role">.NET Developer Intern</div>
+          <div class="tl-company">Cravita Technologies Pvt. Ltd.</div>
+          <ul class="tl-points">
+            <li>Developed modules using ASP.NET Core MVC and C#</li>
+            <li>Contributed to Staff Management and Admin Dashboard features</li>
+          </ul>
+          <div class="tl-tech">
+            <span class="tl-chip">ASP.NET MVC</span><span class="tl-chip">C#</span><span class="tl-chip">SQL Server</span>
+          </div>
+        </div>
+      </div>
+      <div>
+        <h4 style="font-size:13px;color:#1e1b4b;margin-bottom:12px;">🏅 Certifications</h4>
+        <div class="cert-cards">
+          <div class="cert-card">
+            <div class="cert-icon-big">🪟</div>
+            <div>
+              <div class="cert-title">Microsoft Azure Fundamentals</div>
+              <div class="cert-issuer">Microsoft Certified ✅</div>
+            </div>
+          </div>
+          <div class="cert-card">
+            <div class="cert-icon-big">💻</div>
+            <div>
+              <div class="cert-title">.NET Development Course</div>
+              <div class="cert-issuer">Fortune Cloud Technologies ✅</div>
+            </div>
+          </div>
+        </div>
+        <h4 style="font-size:13px;color:#1e1b4b;margin-bottom:12px;margin-top:14px;">🎓 Education</h4>
+        <div class="timeline-item">
+          <div class="tl-period">2021 – 2024</div>
+          <div class="tl-role">Bachelor of Computer Applications (BCA)</div>
+          <div class="tl-company">Vishwalata College, Yeola, Nashik</div>
+          <div style="font-size:11px;color:#4b5563;margin-top:3px;">CGPA: 7.54 · Savitribai Phule Pune University</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CONTACT -->
+  <section>
+    <div class="sec-label">Get Started</div>
+    <div class="sec-title">Contact &amp; Connect</div>
+    <div class="contact-grid">
+      <div class="contact-item">
+        <div class="contact-label">📱 WhatsApp / Call</div>
+        <div class="contact-value">+91 7588174528</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">✉️ Email</div>
+        <div class="contact-value">maheshjagzap03@gmail.com</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">📍 Location</div>
+        <div class="contact-value">Maharashtra, India</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">💼 LinkedIn</div>
+        <div class="contact-value">linkedin.com/in/maheshjagzap</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">🐙 GitHub</div>
+        <div class="contact-value">github.com/maheshjagzap</div>
+      </div>
+      <div class="contact-item">
+        <div class="contact-label">🟢 Status</div>
+        <div class="contact-value">Available for Projects</div>
+      </div>
+    </div>
+  </section>
+
+  <div class="footer-note">
+    © 2026 Mahesh Jagzap · Custom Web Development · Maharashtra, India<br>
+    <em>Free consultation for all new projects — reach out via WhatsApp or email to discuss your idea.</em>
+  </div>
+
+</div>
+</body>
+</html>
